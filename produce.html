@@ -82,37 +82,37 @@
     <script>
         const products = [
             // Grains & Cereals (5 items)
-            { id: 'rice', name: 'Rice', category: 'Grains & Cereals', price: 50, unit: 'kg', image: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500&h=500&fit=crop' },
-            { id: 'corn', name: 'Corn', category: 'Grains & Cereals', price: 12, unit: 'piece', image: 'https://images.unsplash.com/photo-1552821206-c16e8e0b1fe9?w=500&h=500&fit=crop' },
+            { id: 'rice', name: 'Rice', category: 'Grains & Cereals', price: 50, unit: 'kg', image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500&h=500&fit=crop' },
+            { id: 'corn', name: 'Corn', category: 'Grains & Cereals', price: 12, unit: 'piece', image: 'https://images.unsplash.com/photo-1605027979545-f057e4e4e9ef?w=500&h=500&fit=crop' },
             { id: 'wheat', name: 'Wheat', category: 'Grains & Cereals', price: 45, unit: 'kg', image: 'https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=500&h=500&fit=crop' },
-            { id: 'barley', name: 'Barley', category: 'Grains & Cereals', price: 38, unit: 'kg', image: 'https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=500&h=500&fit=crop' },
-            { id: 'oats', name: 'Oats', category: 'Grains & Cereals', price: 55, unit: 'kg', image: 'https://images.unsplash.com/photo-1585961454903-3240e7b38f24?w=500&h=500&fit=crop' },
+            { id: 'barley', name: 'Barley', category: 'Grains & Cereals', price: 38, unit: 'kg', image: 'https://images.unsplash.com/photo-1585254487710-b7f3a3999e3c?w=500&h=500&fit=crop' },
+            { id: 'oats', name: 'Oats', category: 'Grains & Cereals', price: 55, unit: 'kg', image: 'https://images.unsplash.com/photo-1596386327862-a4ae0ce7a26a?w=500&h=500&fit=crop' },
 
             // Fruits (5 items)
             { id: 'banana', name: 'Banana', category: 'Fruits', price: 35, unit: 'bunch', image: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&h=500&fit=crop' },
             { id: 'mango', name: 'Mango', category: 'Fruits', price: 73, unit: 'kg', image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&h=500&fit=crop' },
-            { id: 'banana_min', name: 'Banana (Miniature)', category: 'Fruits', price: 19, unit: 'piece', image: 'https://images.unsplash.com/photo-1609312814935-e6cf248fbb8b?w=500&h=500&fit=crop' },
+            { id: 'banana_min', name: 'Banana (Miniature)', category: 'Fruits', price: 19, unit: 'piece', image: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&h=500&fit=crop' },
             { id: 'coconut', name: 'Coconut', category: 'Fruits', price: 19, unit: 'piece', image: 'https://images.unsplash.com/photo-1535868183007-b24ef45affab?w=500&h=500&fit=crop' },
-            { id: 'pineapple', name: 'Pineapple', category: 'Fruits', price: 42, unit: 'piece', image: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd46c11?w=500&h=500&fit=crop' },
+            { id: 'pineapple', name: 'Pineapple', category: 'Fruits', price: 42, unit: 'piece', image: 'https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=500&h=500&fit=crop' },
 
             // Vegetables (5 items)
             { id: 'tomato', name: 'Tomato', category: 'Vegetables', price: 43, unit: 'kg', image: 'https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=500&h=500&fit=crop' },
-            { id: 'eggplant', name: 'Eggplant', category: 'Vegetables', price: 35, unit: 'kg', image: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd46c11?w=500&h=500&fit=crop' },
+            { id: 'eggplant', name: 'Eggplant', category: 'Vegetables', price: 35, unit: 'kg', image: 'https://images.unsplash.com/photo-1585518419759-d77410f99b13?w=500&h=500&fit=crop' },
             { id: 'cabbage', name: 'Cabbage', category: 'Vegetables', price: 53, unit: 'head', image: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=500&h=500&fit=crop' },
             { id: 'onion', name: 'Onion', category: 'Vegetables', price: 85, unit: 'kg', image: 'https://images.unsplash.com/photo-1599598427245-a711a5ad0d13?w=500&h=500&fit=crop' },
-            { id: 'carrot', name: 'Carrot', category: 'Vegetables', price: 40, unit: 'kg', image: 'https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=500&h=500&fit=crop' },
+            { id: 'carrot', name: 'Carrot', category: 'Vegetables', price: 40, unit: 'kg', image: 'https://images.unsplash.com/photo-1584270354949-121cff79a977?w=500&h=500&fit=crop' },
 
             // Root Crops (5 items)
             { id: 'ginger', name: 'Ginger', category: 'Root Crops', price: 120, unit: 'kg', image: 'https://images.unsplash.com/photo-1606553900557-f379655452f5?w=500&h=500&fit=crop' },
-            { id: 'sweet_potato', name: 'Sweet Potato', category: 'Root Crops', price: 28, unit: 'kg', image: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500&h=500&fit=crop' },
+            { id: 'sweet_potato', name: 'Sweet Potato', category: 'Root Crops', price: 28, unit: 'kg', image: 'https://images.unsplash.com/photo-1596548183001-b32b0d67d76a?w=500&h=500&fit=crop' },
             { id: 'potato', name: 'Potato', category: 'Root Crops', price: 32, unit: 'kg', image: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500&h=500&fit=crop' },
             { id: 'taro', name: 'Taro Root', category: 'Root Crops', price: 45, unit: 'kg', image: 'https://images.unsplash.com/photo-1599599810780-e12bbe2b75b9?w=500&h=500&fit=crop' },
             { id: 'cassava', name: 'Cassava', category: 'Root Crops', price: 25, unit: 'kg', image: 'https://images.unsplash.com/photo-1585518419759-d77410f99b13?w=500&h=500&fit=crop' },
 
             // Herbs & Spices (5 items)
-            { id: 'turmeric', name: 'Turmeric', category: 'Herbs & Spices', price: 150, unit: 'kg', image: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd46c11?w=500&h=500&fit=crop' },
+            { id: 'turmeric', name: 'Turmeric', category: 'Herbs & Spices', price: 150, unit: 'kg', image: 'https://images.unsplash.com/photo-1596040411351-cd5c49db1e5c?w=500&h=500&fit=crop' },
             { id: 'garlic', name: 'Garlic', category: 'Herbs & Spices', price: 180, unit: 'kg', image: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd46c11?w=500&h=500&fit=crop' },
-            { id: 'chili_pepper', name: 'Chili Pepper', category: 'Herbs & Spices', price: 95, unit: 'kg', image: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd46c11?w=500&h=500&fit=crop' },
+            { id: 'chili_pepper', name: 'Chili Pepper', category: 'Herbs & Spices', price: 95, unit: 'kg', image: 'https://images.unsplash.com/photo-1585518419759-d77410f99b13?w=500&h=500&fit=crop' },
             { id: 'basil', name: 'Basil', category: 'Herbs & Spices', price: 60, unit: 'bunch', image: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd46c11?w=500&h=500&fit=crop' },
             { id: 'black_pepper', name: 'Black Pepper', category: 'Herbs & Spices', price: 200, unit: 'kg', image: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd46c11?w=500&h=500&fit=crop' },
 
@@ -120,7 +120,7 @@
             { id: 'coconut_oil', name: 'Coconut Oil', category: 'Coconut Products', price: 350, unit: 'liter', image: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd46c11?w=500&h=500&fit=crop' },
             { id: 'coconut_milk', name: 'Coconut Milk', category: 'Coconut Products', price: 85, unit: 'can', image: 'https://images.unsplash.com/photo-1535868183007-b24ef45affab?w=500&h=500&fit=crop' },
             { id: 'dried_coconut', name: 'Dried Coconut', category: 'Coconut Products', price: 120, unit: 'kg', image: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd46c11?w=500&h=500&fit=crop' },
-            { id: 'coconut_flour', name: 'Coconut Flour', category: 'Coconut Products', price: 140, unit: 'kg', image: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd46c11?w=500&h=500&fit=crop' },
+            { id: 'coconut_flour', name: 'Coconut Flour', category: 'Coconut Products', price: 140, unit: 'kg', image: 'https://images.unsplash.com/photo-1585961454903-3240e7b38f24?w=500&h=500&fit=crop' },
 
             // Coffee & Cacao (4 items)
             { id: 'coffee_beans', name: 'Coffee Beans', category: 'Coffee & Cacao', price: 250, unit: 'kg', image: 'https://images.unsplash.com/photo-1559056199-641a0ac8b3f7?w=500&h=500&fit=crop' },
@@ -129,14 +129,14 @@
             { id: 'cacao_beans', name: 'Cacao Beans', category: 'Coffee & Cacao', price: 200, unit: 'kg', image: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd46c11?w=500&h=500&fit=crop' },
 
             // Rice Products (5 items)
-            { id: 'white_rice', name: 'White Rice', category: 'Rice Products', price: 50, unit: 'kg', image: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500&h=500&fit=crop' },
-            { id: 'brown_rice', name: 'Brown Rice', category: 'Rice Products', price: 58, unit: 'kg', image: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500&h=500&fit=crop' },
-            { id: 'jasmine_rice', name: 'Jasmine Rice', category: 'Rice Products', price: 65, unit: 'kg', image: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500&h=500&fit=crop' },
+            { id: 'white_rice', name: 'White Rice', category: 'Rice Products', price: 50, unit: 'kg', image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500&h=500&fit=crop' },
+            { id: 'brown_rice', name: 'Brown Rice', category: 'Rice Products', price: 58, unit: 'kg', image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500&h=500&fit=crop' },
+            { id: 'jasmine_rice', name: 'Jasmine Rice', category: 'Rice Products', price: 65, unit: 'kg', image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500&h=500&fit=crop' },
             { id: 'rice_flour', name: 'Rice Flour', category: 'Rice Products', price: 55, unit: 'kg', image: 'https://images.unsplash.com/photo-1585961454903-3240e7b38f24?w=500&h=500&fit=crop' },
-            { id: 'glutinous_rice', name: 'Glutinous Rice', category: 'Rice Products', price: 60, unit: 'kg', image: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500&h=500&fit=crop' },
+            { id: 'glutinous_rice', name: 'Glutinous Rice', category: 'Rice Products', price: 60, unit: 'kg', image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500&h=500&fit=crop' },
 
             // Corn Products (4 items)
-            { id: 'corn_kernel', name: 'Corn Kernel', category: 'Corn Products', price: 15, unit: 'piece', image: 'https://images.unsplash.com/photo-1552821206-c16e8e0b1fe9?w=500&h=500&fit=crop' },
+            { id: 'corn_kernel', name: 'Corn Kernel', category: 'Corn Products', price: 15, unit: 'piece', image: 'https://images.unsplash.com/photo-1605027979545-f057e4e4e9ef?w=500&h=500&fit=crop' },
             { id: 'cornmeal', name: 'Cornmeal', category: 'Corn Products', price: 35, unit: 'kg', image: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd46c11?w=500&h=500&fit=crop' },
             { id: 'corn_oil', name: 'Corn Oil', category: 'Corn Products', price: 120, unit: 'liter', image: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd46c11?w=500&h=500&fit=crop' },
             { id: 'corn_flour', name: 'Corn Flour', category: 'Corn Products', price: 40, unit: 'kg', image: 'https://images.unsplash.com/photo-1585961454903-3240e7b38f24?w=500&h=500&fit=crop' },
@@ -149,15 +149,15 @@
             { id: 'peanuts', name: 'Peanuts', category: 'Beans & Legumes', price: 120, unit: 'kg', image: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd46c11?w=500&h=500&fit=crop' },
 
             // Poultry Livestock (4 items)
-            { id: 'chicken', name: 'Chicken (Whole)', category: 'Poultry Livestock', price: 200, unit: 'kg', image: 'https://images.unsplash.com/photo-1584270354949-121cff79a977?w=500&h=500&fit=crop' },
-            { id: 'chicken_breast', name: 'Chicken Breast', category: 'Poultry Livestock', price: 280, unit: 'kg', image: 'https://images.unsplash.com/photo-1584270354949-121cff79a977?w=500&h=500&fit=crop' },
-            { id: 'duck', name: 'Duck (Whole)', category: 'Poultry Livestock', price: 250, unit: 'kg', image: 'https://images.unsplash.com/photo-1584270354949-121cff79a977?w=500&h=500&fit=crop' },
-            { id: 'quail', name: 'Quail (Whole)', category: 'Poultry Livestock', price: 180, unit: 'kg', image: 'https://images.unsplash.com/photo-1584270354949-121cff79a977?w=500&h=500&fit=crop' },
+            { id: 'chicken', name: 'Chicken (Whole)', category: 'Poultry Livestock', price: 200, unit: 'kg', image: 'https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=500&h=500&fit=crop' },
+            { id: 'chicken_breast', name: 'Chicken Breast', category: 'Poultry Livestock', price: 280, unit: 'kg', image: 'https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=500&h=500&fit=crop' },
+            { id: 'duck', name: 'Duck (Whole)', category: 'Poultry Livestock', price: 250, unit: 'kg', image: 'https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=500&h=500&fit=crop' },
+            { id: 'quail', name: 'Quail (Whole)', category: 'Poultry Livestock', price: 180, unit: 'kg', image: 'https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=500&h=500&fit=crop' },
 
             // Fisheries & Seafood (5 items)
             { id: 'tilapia', name: 'Tilapia', category: 'Fisheries & Seafood', price: 220, unit: 'kg', image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=500&h=500&fit=crop' },
-            { id: 'shrimp', name: 'Shrimp', category: 'Fisheries & Seafood', price: 350, unit: 'kg', image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=500&h=500&fit=crop' },
-            { id: 'crab', name: 'Crab', category: 'Fisheries & Seafood', price: 400, unit: 'kg', image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=500&h=500&fit=crop' },
+            { id: 'shrimp', name: 'Shrimp', category: 'Fisheries & Seafood', price: 350, unit: 'kg', image: 'https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=500&h=500&fit=crop' },
+            { id: 'crab', name: 'Crab', category: 'Fisheries & Seafood', price: 400, unit: 'kg', image: 'https://images.unsplash.com/photo-1563827034-e6b99f582e04?w=500&h=500&fit=crop' },
             { id: 'bangus', name: 'Bangus (Milkfish)', category: 'Fisheries & Seafood', price: 200, unit: 'kg', image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=500&h=500&fit=crop' },
             { id: 'dried_fish', name: 'Dried Fish', category: 'Fisheries & Seafood', price: 250, unit: 'kg', image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=500&h=500&fit=crop' },
 
@@ -171,7 +171,7 @@
             // Organic Products (5 items)
             { id: 'organic_vegetables', name: 'Organic Vegetable Mix', category: 'Organic Products', price: 120, unit: 'kg', image: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd46c11?w=500&h=500&fit=crop' },
             { id: 'organic_fruits', name: 'Organic Fruit Mix', category: 'Organic Products', price: 150, unit: 'kg', image: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd46c11?w=500&h=500&fit=crop' },
-            { id: 'organic_rice', name: 'Organic Rice', category: 'Organic Products', price: 75, unit: 'kg', image: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500&h=500&fit=crop' },
+            { id: 'organic_rice', name: 'Organic Rice', category: 'Organic Products', price: 75, unit: 'kg', image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500&h=500&fit=crop' },
             { id: 'organic_coffee', name: 'Organic Coffee', category: 'Organic Products', price: 320, unit: 'kg', image: 'https://images.unsplash.com/photo-1559056199-641a0ac8b3f7?w=500&h=500&fit=crop' },
             { id: 'organic_honey', name: 'Organic Honey', category: 'Organic Products', price: 250, unit: 'kg', image: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd46c11?w=500&h=500&fit=crop' },
 
@@ -184,7 +184,7 @@
 
             // Flowers & Ornamentals (4 items)
             { id: 'roses', name: 'Roses', category: 'Flowers & Ornamentals', price: 200, unit: 'dozen', image: 'https://images.unsplash.com/photo-1564765486900-6f4ee5583583?w=500&h=500&fit=crop' },
-            { id: 'orchids', name: 'Orchids', category: 'Flowers & Ornamentals', price: 150, unit: 'piece', image: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd46c11?w=500&h=500&fit=crop' },
+            { id: 'orchids', name: 'Orchids', category: 'Flowers & Ornamentals', price: 150, unit: 'piece', image: 'https://images.unsplash.com/photo-1520763185298-1b434c919eba?w=500&h=500&fit=crop' },
             { id: 'sunflowers', name: 'Sunflowers', category: 'Flowers & Ornamentals', price: 100, unit: 'dozen', image: 'https://images.unsplash.com/photo-1597848212624-e27a6b9f41e5?w=500&h=500&fit=crop' },
             { id: 'chrysanthemums', name: 'Chrysanthemums', category: 'Flowers & Ornamentals', price: 120, unit: 'bunch', image: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd46c11?w=500&h=500&fit=crop' },
 
@@ -203,8 +203,8 @@
             { id: 'pruner', name: 'Pruning Shears', category: 'Farming Equipment', price: 250, unit: 'piece', image: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd46c11?w=500&h=500&fit=crop' },
 
             // Bulk Orders (5 items)
-            { id: 'bulk_rice', name: 'Bulk Rice (500kg)', category: 'Bulk Orders', price: 20000, unit: 'bag', image: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500&h=500&fit=crop' },
-            { id: 'bulk_corn', name: 'Bulk Corn (300kg)', category: 'Bulk Orders', price: 12000, unit: 'bag', image: 'https://images.unsplash.com/photo-1552821206-c16e8e0b1fe9?w=500&h=500&fit=crop' },
+            { id: 'bulk_rice', name: 'Bulk Rice (500kg)', category: 'Bulk Orders', price: 20000, unit: 'bag', image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500&h=500&fit=crop' },
+            { id: 'bulk_corn', name: 'Bulk Corn (300kg)', category: 'Bulk Orders', price: 12000, unit: 'bag', image: 'https://images.unsplash.com/photo-1605027979545-f057e4e4e9ef?w=500&h=500&fit=crop' },
             { id: 'bulk_vegetables', name: 'Bulk Vegetable Mix (400kg)', category: 'Bulk Orders', price: 15000, unit: 'bag', image: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd46c11?w=500&h=500&fit=crop' },
             { id: 'bulk_fertilizer', name: 'Bulk Fertilizer (1000kg)', category: 'Bulk Orders', price: 35000, unit: 'ton', image: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd46c11?w=500&h=500&fit=crop' },
             { id: 'bulk_seeds', name: 'Bulk Seeds (50kg)', category: 'Bulk Orders', price: 8000, unit: 'bag', image: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd46c11?w=500&h=500&fit=crop' },
@@ -214,7 +214,7 @@
             { id: 'trending_matcha', name: 'Organic Matcha', category: 'Trending Products', price: 450, unit: 'kg', image: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd46c11?w=500&h=500&fit=crop' },
             { id: 'trending_quinoa', name: 'Quinoa', category: 'Trending Products', price: 280, unit: 'kg', image: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd46c11?w=500&h=500&fit=crop' },
             { id: 'trending_herbs', name: 'Medicinal Herbs Bundle', category: 'Trending Products', price: 200, unit: 'bundle', image: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd46c11?w=500&h=500&fit=crop' },
-            { id: 'trending_avocado', name: 'Avocado', category: 'Trending Products', price: 120, unit: 'kg', image: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd46c11?w=500&h=500&fit=crop' },
+            { id: 'trending_avocado', name: 'Avocado', category: 'Trending Products', price: 120, unit: 'kg', image: 'https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=500&h=500&fit=crop' },
 
             // Local Produce (5 items)
             { id: 'local_mangoes', name: 'Local Mangoes', category: 'Local Produce', price: 85, unit: 'kg', image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&h=500&fit=crop' },
