@@ -30,20 +30,36 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-                <h2>ProductCategories</h2>
+                <h2>Product Categories</h2>
                 <p>Explore various fruits, vegetables, and other products. Use the search bar to find specific items.</p>
             </div>
             <img class="hero-image" src="images/farm-illustration.svg" alt="Produce illustration">
         </section>
-                <section class="card shop-section">
+        <section class="card shop-section">
             <div class="shop-header">
                 <input type="text" id="searchBar" placeholder="Search crops, fruits, vegetables...">
                 <div class="shop-tabs">
                     <button class="tab-btn active" data-category="all">All</button>
-                    <button class="tab-btn" data-category="Fruit">Fruits</button>
-                    <button class="tab-btn" data-category="Vegetable">Vegetables</button>
-                    <button class="tab-btn" data-category="Grain">Grains</button>
-                    <button class="tab-btn" data-category="Root">Root Crops</button>
+                    <button class="tab-btn" data-category="Grains & Cereals">Grains & Cereals</button>
+                    <button class="tab-btn" data-category="Fruits">Fruits</button>
+                    <button class="tab-btn" data-category="Vegetables">Vegetables</button>
+                    <button class="tab-btn" data-category="Root Crops">Root Crops</button>
+                    <button class="tab-btn" data-category="Herbs & Spices">Herbs & Spices</button>
+                    <button class="tab-btn" data-category="Coconut Products">Coconut Products</button>
+                    <button class="tab-btn" data-category="Coffee & Cacao">Coffee & Cacao</button>
+                    <button class="tab-btn" data-category="Rice Products">Rice Products</button>
+                    <button class="tab-btn" data-category="Corn Products">Corn Products</button>
+                    <button class="tab-btn" data-category="Beans & Legumes">Beans & Legumes</button>
+                    <button class="tab-btn" data-category="Poultry Livestock">Poultry Livestock</button>
+                    <button class="tab-btn" data-category="Fisheries & Seafood">Fisheries & Seafood</button>
+                    <button class="tab-btn" data-category="Dairy & Eggs">Dairy & Eggs</button>
+                    <button class="tab-btn" data-category="Organic Products">Organic Products</button>
+                    <button class="tab-btn" data-category="Processed Goods">Processed Goods</button>
+                    <button class="tab-btn" data-category="Flowers & Ornamentals">Flowers & Ornamentals</button>
+                    <button class="tab-btn" data-category="Farm Supplies">Farm Supplies</button>
+                    <button class="tab-btn" data-category="Farming Equipment">Farming Equipment</button>
+                    <button class="tab-btn" data-category="Trending Products">Trending Products</button>
+                    <button class="tab-btn" data-category="Local Produce">Local Produce</button>
                 </div>
             </div>
             <div class="shop-body">
@@ -65,18 +81,147 @@
     <script src="js/main.js"></script>
     <script>
         const products = [
-            { id: 'tomato', name: 'Tomato', category: 'Vegetable', price: 43, unit: 'kg', image: 'images/tomato.jpg' },
-            { id: 'eggplant', name: 'Eggplant', category: 'Vegetable', price: 35, unit: 'kg', image: 'images/eggplant.png' },
-            { id: 'cabbage', name: 'Cabbage', category: 'Vegetable', price: 53, unit: 'head', image: 'images/cabbage.jPG' },
-            { id: 'banana', name: 'Banana', category: 'Fruit', price: 35, unit: 'bunch', image: 'images/banana.jpg' },
-            { id: 'mango', name: 'Mango', category: 'Fruit', price: 73, unit: 'kg', image: 'images/mango.jpg' },
-            { id: 'corn', name: 'Corn', category: 'Grain', price: 12, unit: 'piece', image: 'images/corn.jpg' },
-            { id: 'rice', name: 'Rice', category: 'Grain', price: 50, unit: 'kg', image: 'images/rice.jpg' },
-            { id: 'ginger', name: 'Ginger', category: 'Root', price: 120, unit: 'kg', image: 'images/ginger.webp' },
-            { id: 'onion', name: 'Onion', category: 'Vegetable', price: 85, unit: 'kg', image: 'images/onion.webp' },
-            { id: 'sweetPotato', name: 'Sweet Potato', category: 'Root', price: 28, unit: 'kg', image: 'images/sweet_potato.jpg' },
-            { id: 'banana2', name: 'Banana (Min)', category: 'Fruit', price: 19, unit: 'piece', image: 'images/banan_min.jpg' },
-            { id: 'coconut', name: 'Coconut', category: 'Fruit', price: 19, unit: 'piece', image: 'images/coconut.avif' }
+            // Grains & Cereals (5 items)
+            { id: 'rice', name: 'Rice', category: 'Grains & Cereals', price: 50, unit: 'kg', image: 'images/rice.jpg' },
+            { id: 'corn', name: 'Corn', category: 'Grains & Cereals', price: 12, unit: 'piece', image: 'images/corn.jpg' },
+            { id: 'wheat', name: 'Wheat', category: 'Grains & Cereals', price: 45, unit: 'kg', image: 'images/wheat.jpg' },
+            { id: 'barley', name: 'Barley', category: 'Grains & Cereals', price: 38, unit: 'kg', image: 'images/barley.jpg' },
+            { id: 'oats', name: 'Oats', category: 'Grains & Cereals', price: 55, unit: 'kg', image: 'images/oats.jpg' },
+
+            // Fruits (5 items)
+            { id: 'banana', name: 'Banana', category: 'Fruits', price: 35, unit: 'bunch', image: 'images/banana.jpg' },
+            { id: 'mango', name: 'Mango', category: 'Fruits', price: 73, unit: 'kg', image: 'images/mango.jpg' },
+            { id: 'banana_min', name: 'Banana (Miniature)', category: 'Fruits', price: 19, unit: 'piece', image: 'images/banan_min.jpg' },
+            { id: 'coconut', name: 'Coconut', category: 'Fruits', price: 19, unit: 'piece', image: 'images/coconut.avif' },
+            { id: 'pineapple', name: 'Pineapple', category: 'Fruits', price: 42, unit: 'piece', image: 'images/pineapple.jpg' },
+
+            // Vegetables (5 items)
+            { id: 'tomato', name: 'Tomato', category: 'Vegetables', price: 43, unit: 'kg', image: 'images/tomato.jpg' },
+            { id: 'eggplant', name: 'Eggplant', category: 'Vegetables', price: 35, unit: 'kg', image: 'images/eggplant.png' },
+            { id: 'cabbage', name: 'Cabbage', category: 'Vegetables', price: 53, unit: 'head', image: 'images/cabbage.jpg' },
+            { id: 'onion', name: 'Onion', category: 'Vegetables', price: 85, unit: 'kg', image: 'images/onion.webp' },
+            { id: 'carrot', name: 'Carrot', category: 'Vegetables', price: 40, unit: 'kg', image: 'images/carrot.jpg' },
+
+            // Root Crops (5 items)
+            { id: 'ginger', name: 'Ginger', category: 'Root Crops', price: 120, unit: 'kg', image: 'images/ginger.webp' },
+            { id: 'sweet_potato', name: 'Sweet Potato', category: 'Root Crops', price: 28, unit: 'kg', image: 'images/sweet_potato.jpg' },
+            { id: 'potato', name: 'Potato', category: 'Root Crops', price: 32, unit: 'kg', image: 'images/potato.jpg' },
+            { id: 'taro', name: 'Taro Root', category: 'Root Crops', price: 45, unit: 'kg', image: 'images/taro.jpg' },
+            { id: 'cassava', name: 'Cassava', category: 'Root Crops', price: 25, unit: 'kg', image: 'images/cassava.jpg' },
+
+            // Herbs & Spices (5 items)
+            { id: 'turmeric', name: 'Turmeric', category: 'Herbs & Spices', price: 150, unit: 'kg', image: 'images/turmeric.jpg' },
+            { id: 'garlic', name: 'Garlic', category: 'Herbs & Spices', price: 180, unit: 'kg', image: 'images/garlic.jpg' },
+            { id: 'chili_pepper', name: 'Chili Pepper', category: 'Herbs & Spices', price: 95, unit: 'kg', image: 'images/chili_pepper.jpg' },
+            { id: 'basil', name: 'Basil', category: 'Herbs & Spices', price: 60, unit: 'bunch', image: 'images/basil.jpg' },
+            { id: 'black_pepper', name: 'Black Pepper', category: 'Herbs & Spices', price: 200, unit: 'kg', image: 'images/black_pepper.jpg' },
+
+            // Coconut Products (4 items)
+            { id: 'coconut_oil', name: 'Coconut Oil', category: 'Coconut Products', price: 350, unit: 'liter', image: 'images/coconut_oil.jpg' },
+            { id: 'coconut_milk', name: 'Coconut Milk', category: 'Coconut Products', price: 85, unit: 'can', image: 'images/coconut_milk.jpg' },
+            { id: 'dried_coconut', name: 'Dried Coconut', category: 'Coconut Products', price: 120, unit: 'kg', image: 'images/dried_coconut.jpg' },
+            { id: 'coconut_flour', name: 'Coconut Flour', category: 'Coconut Products', price: 140, unit: 'kg', image: 'images/coconut_flour.jpg' },
+
+            // Coffee & Cacao (4 items)
+            { id: 'coffee_beans', name: 'Coffee Beans', category: 'Coffee & Cacao', price: 250, unit: 'kg', image: 'images/coffee_beans.jpg' },
+            { id: 'cacao_powder', name: 'Cacao Powder', category: 'Coffee & Cacao', price: 180, unit: 'kg', image: 'images/cacao_powder.jpg' },
+            { id: 'ground_coffee', name: 'Ground Coffee', category: 'Coffee & Cacao', price: 280, unit: 'kg', image: 'images/ground_coffee.jpg' },
+            { id: 'cacao_beans', name: 'Cacao Beans', category: 'Coffee & Cacao', price: 200, unit: 'kg', image: 'images/cacao_beans.jpg' },
+
+            // Rice Products (5 items)
+            { id: 'white_rice', name: 'White Rice', category: 'Rice Products', price: 50, unit: 'kg', image: 'images/white_rice.jpg' },
+            { id: 'brown_rice', name: 'Brown Rice', category: 'Rice Products', price: 58, unit: 'kg', image: 'images/brown_rice.jpg' },
+            { id: 'jasmine_rice', name: 'Jasmine Rice', category: 'Rice Products', price: 65, unit: 'kg', image: 'images/jasmine_rice.jpg' },
+            { id: 'rice_flour', name: 'Rice Flour', category: 'Rice Products', price: 55, unit: 'kg', image: 'images/rice_flour.jpg' },
+            { id: 'glutinous_rice', name: 'Glutinous Rice', category: 'Rice Products', price: 60, unit: 'kg', image: 'images/glutinous_rice.jpg' },
+
+            // Corn Products (4 items)
+            { id: 'corn_kernel', name: 'Corn Kernel', category: 'Corn Products', price: 15, unit: 'piece', image: 'images/corn_kernel.jpg' },
+            { id: 'cornmeal', name: 'Cornmeal', category: 'Corn Products', price: 35, unit: 'kg', image: 'images/cornmeal.jpg' },
+            { id: 'corn_oil', name: 'Corn Oil', category: 'Corn Products', price: 120, unit: 'liter', image: 'images/corn_oil.jpg' },
+            { id: 'corn_flour', name: 'Corn Flour', category: 'Corn Products', price: 40, unit: 'kg', image: 'images/corn_flour.jpg' },
+
+            // Beans & Legumes (5 items)
+            { id: 'mung_beans', name: 'Mung Beans', category: 'Beans & Legumes', price: 75, unit: 'kg', image: 'images/mung_beans.jpg' },
+            { id: 'kidney_beans', name: 'Kidney Beans', category: 'Beans & Legumes', price: 85, unit: 'kg', image: 'images/kidney_beans.jpg' },
+            { id: 'chickpeas', name: 'Chickpeas', category: 'Beans & Legumes', price: 90, unit: 'kg', image: 'images/chickpeas.jpg' },
+            { id: 'black_beans', name: 'Black Beans', category: 'Beans & Legumes', price: 80, unit: 'kg', image: 'images/black_beans.jpg' },
+            { id: 'peanuts', name: 'Peanuts', category: 'Beans & Legumes', price: 120, unit: 'kg', image: 'images/peanuts.jpg' },
+
+            // Poultry Livestock (4 items)
+            { id: 'chicken', name: 'Chicken (Whole)', category: 'Poultry Livestock', price: 200, unit: 'kg', image: 'images/chicken.jpg' },
+            { id: 'chicken_breast', name: 'Chicken Breast', category: 'Poultry Livestock', price: 280, unit: 'kg', image: 'images/chicken_breast.jpg' },
+            { id: 'duck', name: 'Duck (Whole)', category: 'Poultry Livestock', price: 250, unit: 'kg', image: 'images/duck.jpg' },
+            { id: 'quail', name: 'Quail (Whole)', category: 'Poultry Livestock', price: 180, unit: 'kg', image: 'images/quail.jpg' },
+
+            // Fisheries & Seafood (5 items)
+            { id: 'tilapia', name: 'Tilapia', category: 'Fisheries & Seafood', price: 220, unit: 'kg', image: 'images/tilapia.jpg' },
+            { id: 'shrimp', name: 'Shrimp', category: 'Fisheries & Seafood', price: 350, unit: 'kg', image: 'images/shrimp.jpg' },
+            { id: 'crab', name: 'Crab', category: 'Fisheries & Seafood', price: 400, unit: 'kg', image: 'images/crab.jpg' },
+            { id: 'bangus', name: 'Bangus (Milkfish)', category: 'Fisheries & Seafood', price: 200, unit: 'kg', image: 'images/bangus.jpg' },
+            { id: 'dried_fish', name: 'Dried Fish', category: 'Fisheries & Seafood', price: 250, unit: 'kg', image: 'images/dried_fish.jpg' },
+
+            // Dairy & Eggs (5 items)
+            { id: 'chicken_eggs', name: 'Chicken Eggs', category: 'Dairy & Eggs', price: 120, unit: 'tray', image: 'images/chicken_eggs.jpg' },
+            { id: 'milk', name: 'Fresh Milk', category: 'Dairy & Eggs', price: 60, unit: 'liter', image: 'images/milk.jpg' },
+            { id: 'cheese', name: 'Cheese', category: 'Dairy & Eggs', price: 180, unit: 'kg', image: 'images/cheese.jpg' },
+            { id: 'butter', name: 'Butter', category: 'Dairy & Eggs', price: 220, unit: 'kg', image: 'images/butter.jpg' },
+            { id: 'duck_eggs', name: 'Duck Eggs', category: 'Dairy & Eggs', price: 140, unit: 'tray', image: 'images/duck_eggs.jpg' },
+
+            // Organic Products (5 items)
+            { id: 'organic_vegetables', name: 'Organic Vegetable Mix', category: 'Organic Products', price: 120, unit: 'kg', image: 'images/organic_vegetables.jpg' },
+            { id: 'organic_fruits', name: 'Organic Fruit Mix', category: 'Organic Products', price: 150, unit: 'kg', image: 'images/organic_fruits.jpg' },
+            { id: 'organic_rice', name: 'Organic Rice', category: 'Organic Products', price: 75, unit: 'kg', image: 'images/organic_rice.jpg' },
+            { id: 'organic_coffee', name: 'Organic Coffee', category: 'Organic Products', price: 320, unit: 'kg', image: 'images/organic_coffee.jpg' },
+            { id: 'organic_honey', name: 'Organic Honey', category: 'Organic Products', price: 250, unit: 'kg', image: 'images/organic_honey.jpg' },
+
+            // Processed Goods (5 items)
+            { id: 'canned_vegetables', name: 'Canned Vegetables', category: 'Processed Goods', price: 45, unit: 'can', image: 'images/canned_vegetables.jpg' },
+            { id: 'jam', name: 'Fruit Jam', category: 'Processed Goods', price: 80, unit: 'jar', image: 'images/jam.jpg' },
+            { id: 'pickles', name: 'Pickles', category: 'Processed Goods', price: 70, unit: 'jar', image: 'images/pickles.jpg' },
+            { id: 'dried_fruits', name: 'Dried Fruits', category: 'Processed Goods', price: 160, unit: 'kg', image: 'images/dried_fruits.jpg' },
+            { id: 'vinegar', name: 'Vinegar', category: 'Processed Goods', price: 50, unit: 'liter', image: 'images/vinegar.jpg' },
+
+            // Flowers & Ornamentals (4 items)
+            { id: 'roses', name: 'Roses', category: 'Flowers & Ornamentals', price: 200, unit: 'dozen', image: 'images/roses.jpg' },
+            { id: 'orchids', name: 'Orchids', category: 'Flowers & Ornamentals', price: 150, unit: 'piece', image: 'images/orchids.jpg' },
+            { id: 'sunflowers', name: 'Sunflowers', category: 'Flowers & Ornamentals', price: 100, unit: 'dozen', image: 'images/sunflowers.jpg' },
+            { id: 'chrysanthemums', name: 'Chrysanthemums', category: 'Flowers & Ornamentals', price: 120, unit: 'bunch', image: 'images/chrysanthemums.jpg' },
+
+            // Farm Supplies (5 items)
+            { id: 'fertilizer', name: 'Organic Fertilizer', category: 'Farm Supplies', price: 350, unit: '50kg', image: 'images/fertilizer.jpg' },
+            { id: 'pesticide', name: 'Natural Pesticide', category: 'Farm Supplies', price: 280, unit: 'liter', image: 'images/pesticide.jpg' },
+            { id: 'seeds', name: 'Vegetable Seeds Pack', category: 'Farm Supplies', price: 120, unit: 'pack', image: 'images/seeds.jpg' },
+            { id: 'soil', name: 'Garden Soil', category: 'Farm Supplies', price: 400, unit: '50kg', image: 'images/soil.jpg' },
+            { id: 'compost', name: 'Compost', category: 'Farm Supplies', price: 250, unit: '30kg', image: 'images/compost.jpg' },
+
+            // Farming Equipment (5 items)
+            { id: 'hoe', name: 'Garden Hoe', category: 'Farming Equipment', price: 450, unit: 'piece', image: 'images/hoe.jpg' },
+            { id: 'spade', name: 'Shovel/Spade', category: 'Farming Equipment', price: 350, unit: 'piece', image: 'images/spade.jpg' },
+            { id: 'watering_can', name: 'Watering Can', category: 'Farming Equipment', price: 200, unit: 'piece', image: 'images/watering_can.jpg' },
+            { id: 'rake', name: 'Garden Rake', category: 'Farming Equipment', price: 300, unit: 'piece', image: 'images/rake.jpg' },
+            { id: 'pruner', name: 'Pruning Shears', category: 'Farming Equipment', price: 250, unit: 'piece', image: 'images/pruner.jpg' },
+
+            // Bulk Orders (5 items)
+            { id: 'bulk_rice', name: 'Bulk Rice (500kg)', category: 'Bulk Orders', price: 20000, unit: 'bag', image: 'images/bulk_rice.jpg' },
+            { id: 'bulk_corn', name: 'Bulk Corn (300kg)', category: 'Bulk Orders', price: 12000, unit: 'bag', image: 'images/bulk_corn.jpg' },
+            { id: 'bulk_vegetables', name: 'Bulk Vegetable Mix (400kg)', category: 'Bulk Orders', price: 15000, unit: 'bag', image: 'images/bulk_vegetables.jpg' },
+            { id: 'bulk_fertilizer', name: 'Bulk Fertilizer (1000kg)', category: 'Bulk Orders', price: 35000, unit: 'ton', image: 'images/bulk_fertilizer.jpg' },
+            { id: 'bulk_seeds', name: 'Bulk Seeds (50kg)', category: 'Bulk Orders', price: 8000, unit: 'bag', image: 'images/bulk_seeds.jpg' },
+
+            // Trending Products (5 items)
+            { id: 'trending_honey', name: 'Raw Honey', category: 'Trending Products', price: 300, unit: 'kg', image: 'images/trending_honey.jpg' },
+            { id: 'trending_matcha', name: 'Organic Matcha', category: 'Trending Products', price: 450, unit: 'kg', image: 'images/trending_matcha.jpg' },
+            { id: 'trending_quinoa', name: 'Quinoa', category: 'Trending Products', price: 280, unit: 'kg', image: 'images/trending_quinoa.jpg' },
+            { id: 'trending_herbs', name: 'Medicinal Herbs Bundle', category: 'Trending Products', price: 200, unit: 'bundle', image: 'images/trending_herbs.jpg' },
+            { id: 'trending_avocado', name: 'Avocado', category: 'Trending Products', price: 120, unit: 'kg', image: 'images/trending_avocado.jpg' },
+
+            // Local Produce (5 items)
+            { id: 'local_mangoes', name: 'Local Mangoes', category: 'Local Produce', price: 85, unit: 'kg', image: 'images/local_mangoes.jpg' },
+            { id: 'local_papaya', name: 'Papaya', category: 'Local Produce', price: 45, unit: 'kg', image: 'images/local_papaya.jpg' },
+            { id: 'local_guava', name: 'Guava', category: 'Local Produce', price: 50, unit: 'kg', image: 'images/local_guava.jpg' },
+            { id: 'local_santol', name: 'Santol (Rind Fruit)', category: 'Local Produce', price: 60, unit: 'kg', image: 'images/local_santol.jpg' },
+            { id: 'local_calamansi', name: 'Calamansi', category: 'Local Produce', price: 75, unit: 'kg', image: 'images/local_calamansi.jpg' }
         ];
 
         const productGrid = document.getElementById('productGrid');
@@ -258,5 +403,4 @@
         renderCart();
     </script>
 </body>
-</html></content>
-<parameter name="filePath">d:\ASH WEB\produce.html</parameter>
+</html>
