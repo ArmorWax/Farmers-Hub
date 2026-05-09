@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - SugbUma</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/sugbuma-logo.svg">
+    <style>
+        .nav-badge {
+            display: inline-flex;
+            min-width: 22px;
+            min-height: 22px;
+            align-items: center;
+            justify-content: center;
+            padding: 0 7px;
+            border-radius: 999px;
+            background: var(--primary);
+            color: #fff;
+            font-size: 0.85rem;
+            margin-left: 0.35rem;
+        }
+        .modal-backdrop {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.45);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+        .modal-backdrop.active {
+            display: flex;
+        }
+        .modal-content {
+            background: #fff;
+            border-radius: 16px;
+            max-width: 520px;
+            width: 100%;
+            padding: 1.5rem;
+            box-shadow: 0 24px 60px rgba(0,0,0,0.18);
+        }
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .modal-header h4 {
+            margin: 0;
+        }
+        .modal-body p,
+        .modal-body li {
+            margin: 0.5rem 0;
+        }
+        .modal-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .modal-body ul {
+            padding-left: 1.2rem;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-brand">
+            <img src="images/sugbuma-logo.svg" alt="SugbUma Logo" class="logo-img">
+            <h1>SugbUma Dashboard</h1>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="feed.html"><i class="fas fa-rss"></i> Feed</a>
+            <a href="market.html"><i class="fas fa-chart-line"></i> Market</a>
+            <a href="report.html"><i class="fas fa-exclamation-triangle"></i> Reports</a>
+            <a href="community.html"><i class="fas fa-users"></i> Community</a>
+            <a href="travel.html"><i class="fas fa-map"></i> Travel</a>
+            <a href="produce.html"><i class="fas fa-leaf"></i> Products</a>
+            <a href="#" id="logoutLink"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <div class="section-head">
+                <div>
+                    <h3>Welcome, <span id="userName"></span></h3>
+                    <p class="note">City: <strong><span id="userCity"></span></strong> • Role: <strong><span id="userType"></span></strong></p>
+                </div>
+                <button id="logoutBtn" class="btn btn-secondary">Logout</button>
+            </div>
+            <div class="dashboard-grid">
+                <div class="panel">
+                    <h4><i class="fas fa-user"></i> Profile</h4>
+                    <div class="profile-section">
+                        <div class="profile-pic-container">
+                            <img id="profilePic" src="" alt="Profile Picture" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary);">
+                            <input type="file" id="profilePicInput" accept="image/*" style="display: none;">
+                            <button id="changePicBtn" class="btn btn-secondary" style="margin-top: 0.5rem;"><i class="fas fa-camera"></i> Change Picture</button>
+                        </div>
+                        <div id="profileDisplay">
+                            <p>Name: <strong><span id="profileName"></span></strong></p>
+                            <p>Location: <strong><span id="profileLocation"></span></strong></p>
+                            <p>Role: <strong><span id="profileRole"></span></strong></p>
+                            <p>Crops: <strong><span id="profileCrops"></span></strong></p>
+                        </div>
+                        <div id="profileEdit" style="display: none;">
+                            <div>
+                                <label for="editName">Name</label>
+                                <input type="text" id="editName">
+                            </div>
+                            <div>
+                                <label for="editCity">City</label>
+                                <input type="text" id="editCity">
+                            </div>
+                            <div>
+                                <label for="editUserType">Role</label>
+                                <select id="editUserType">
+                                    <option value="farmer">Farmer</option>
+                                    <option value="consumer">Consumer</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="editCrops">Crops (comma separated)</label>
+                                <input type="text" id="editCrops" placeholder="e.g., rice, corn, banana">
+                            </div>
+                            <button id="saveProfile" class="btn btn-primary"><i class="fas fa-save"></i> Save Changes</button>
+                            <button id="cancelEdit" class="btn btn-secondary"><i class="fas fa-times"></i> Cancel</button>
+                        </div>
+                        <button id="editProfile" class="btn btn-secondary" style="margin-top: 1rem;"><i class="fas fa-edit"></i> Edit Profile</button>
+                    </div>
+                </div>
+                <div class="panel">
+                    <h4><i class="fas fa-box"></i> My Products</h4>
+                    <div id="productsSection">
+                        <div id="addProductForm" style="margin-bottom: 1rem;">
+                            <h5>Add New Product</h5>
+                            <form id="productForm">
+                                <div style="margin-bottom: 0.5rem;">
+                                    <label for="productName">Product Name</label>
+                                    <input type="text" id="productName" required placeholder="e.g., Rice, Corn">
+                                </div>
+                                <div style="margin-bottom: 0.5rem;">
+                                    <label for="productDescription">Description</label>
+                                    <textarea id="productDescription" rows="2" placeholder="Describe your product"></textarea>
+                                </div>
+                                <div style="margin-bottom: 0.5rem;">
+                                    <label for="productPrice">Price (₱)</label>
+                                    <input type="number" id="productPrice" step="0.01" required placeholder="0.00">
+                                </div>
+                                <div style="margin-bottom: 0.5rem;">
+                                    <label for="productQuantity">Quantity</label>
+                                    <input type="number" id="productQuantity" required placeholder="e.g., 100 kg">
+                                </div>
+                                <div style="margin-bottom: 0.5rem;">
+                                    <label for="productImage" class="btn btn-secondary"><i class="fas fa-camera"></i> Select Image</label>
+                                    <input type="file" id="productImage" accept="image/*" style="display: none;">
+                                    <div id="productImagePreview" style="margin-top: 0.5rem;"></div>
+                                </div>
+                                <button type="submit" class="btn btn-primary"><i class="fas fa-plus"></i> Add Product</button>
+                            </form>
+                        </div>
+                        <div id="productsList">
+                            <h5>My Listed Products</h5>
+                            <div id="productsContainer"></div>
+                        </div>
+                        <div id="cartSection" style="margin-top: 1.5rem;">
+                            <h5>Shopping Cart</h5>
+                            <div id="cartContainer"></div>
+                            <button id="checkoutBtn" class="btn btn-primary" style="margin-top: 1rem;"><i class="fas fa-shopping-cart"></i> Checkout Cart</button>
+                        </div>
+                        <div id="ordersSection" style="margin-top: 1.5rem;">
+                            <h5>Order History</h5>
+                            <div id="ordersContainer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="checkoutModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="checkoutModalTitle">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 id="checkoutModalTitle">Confirm Checkout</h4>
+                <button id="closeCheckoutModal" class="btn btn-secondary" aria-label="Close checkout modal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <p>Review your cart items and confirm your order.</p>
+                <div id="checkoutSummary"></div>
+                <p><strong>Total:</strong> ₱<span id="checkoutTotal">0.00</span></p>
+            </div>
+            <div class="modal-actions">
+                <button id="cancelCheckoutBtn" class="btn btn-secondary">Cancel</button>
+                <button id="confirmCheckoutBtn" class="btn btn-primary"><i class="fas fa-check"></i> Confirm Order</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2026 SugbUma. All rights reserved.</p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

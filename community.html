@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community - SugbUma</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/sugbuma-logo.svg">
+</head>
+<body>
+    <header>
+        <h1><img src="images/sugbuma-logo.svg" alt="SugbUma Logo" style="width: 40px; height: 40px; margin-right: 0.5rem;"> SugbUma <span class="tagline">Smart Farming Hub</span></h1>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="feed.html"><i class="fas fa-rss"></i> Feed</a>
+            <a href="market.html"><i class="fas fa-chart-line"></i> Market</a>
+            <a href="report.html"><i class="fas fa-exclamation-triangle"></i> Reports</a>
+            <a href="community.html"><i class="fas fa-users"></i> Community</a>
+            <a href="travel.html"><i class="fas fa-map"></i> Travel</a>
+            <a href="produce.html"><i class="fas fa-leaf"></i> Products</a>
+            <a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Community Space</h2>
+                <p>Ask questions, share reviews, and stay updated with local Cebu farming news.</p>
+            </div>
+            <img class="hero-image" src="images/farm-illustration.svg" alt="Community illustration">
+        </section>
+        <section class="card">
+            <div class="section-head">
+                <h3>Forum</h3>
+                <span class="status-chip">Connect</span>
+            </div>
+            <form id="forumForm">
+                <div>
+                    <label for="forumTopic">Topic</label>
+                    <input type="text" id="forumTopic" placeholder="Topic" required>
+                </div>
+                <div>
+                    <label for="forumMessage">Message</label>
+                    <textarea id="forumMessage" placeholder="Share a thought or ask a question" required></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit"><i class="fas fa-comment"></i> Post Message</button>
+            </form>
+            <ul id="forumList"></ul>
+        </section>
+        <section class="card">
+            <h3>Farmer Reviews</h3>
+            <ul id="reviewList">
+                <li><strong>Golden Harvest Farm</strong> - Trusted and fairly priced. (4.8/5)</li>
+                <li><strong>Green Fields</strong> - Fast response and quality crops. (4.6/5)</li>
+                <li><strong>Island Fresh</strong> - Good prices, especially for rice. (4.4/5)</li>
+            </ul>
+        </section>
+        <section class="card">
+            <h3>Produce Categories</h3>
+            <div class="produce-categories">
+                <h4>Fruits</h4>
+                <ul>
+                    <li>Apple</li>
+                    <li>Banana</li>
+                    <li>Orange</li>
+                    <li>Grape</li>
+                    <li>Strawberry</li>
+                    <li>Blueberry</li>
+                    <li>Raspberry</li>
+                    <li>Blackberry</li>
+                    <li>Cherry</li>
+                    <li>Peach</li>
+                    <li>Pear</li>
+                    <li>Plum</li>
+                    <li>Kiwi</li>
+                    <li>Mango</li>
+                    <li>Pineapple</li>
+                    <li>Watermelon</li>
+                    <li>Cantaloupe</li>
+                    <li>Honeydew</li>
+                    <li>Lemon</li>
+                    <li>Lime</li>
+                    <li>Grapefruit</li>
+                    <li>Tangerine</li>
+                    <li>Clementine</li>
+                    <li>Apricot</li>
+                    <li>Nectarine</li>
+                    <li>Fig</li>
+                    <li>Date</li>
+                    <li>Pomegranate</li>
+                    <li>Dragonfruit</li>
+                    <li>Passionfruit</li>
+                    <li>Guava</li>
+                    <li>Papaya</li>
+                    <li>Coconut</li>
+                    <li>Avocado</li>
+                    <li>Tomato</li>
+                    <li>Cucumber</li>
+                    <li>Eggplant</li>
+                    <li>Pepper</li>
+                    <li>Zucchini</li>
+                    <li>Squash</li>
+                    <li>Pumpkin</li>
+                    <li>Broccoli</li>
+                    <li>Cauliflower</li>
+                    <li>Cabbage</li>
+                    <li>Brussels Sprouts</li>
+                    <li>Kale</li>
+                    <li>Spinach</li>
+                    <li>Lettuce</li>
+                    <li>Arugula</li>
+                    <li>Swiss Chard</li>
+                    <li>Beet Greens</li>
+                    <li>Collard Greens</li>
+                    <li>Carrot</li>
+                    <li>Beet</li>
+                    <li>Radish</li>
+                    <li>Turnip</li>
+                    <li>Parsnip</li>
+                    <li>Potato</li>
+                    <li>Sweet Potato</li>
+                    <li>Onion</li>
+                    <li>Garlic</li>
+                    <li>Shallot</li>
+                    <li>Leek</li>
+                    <li>Scallion</li>
+                    <li>Celery</li>
+                    <li>Fennel</li>
+                    <li>Asparagus</li>
+                    <li>Artichoke</li>
+                    <li>Green Bean</li>
+                    <li>Snap Pea</li>
+                    <li>Snow Pea</li>
+                    <li>Lima Bean</li>
+                    <li>Chickpea</li>
+                    <li>Lentil</li>
+                    <li>Peanut</li>
+                    <li>Almond</li>
+                    <li>Walnut</li>
+                    <li>Pecan</li>
+                    <li>Cashew</li>
+                    <li>Pistachio</li>
+                    <li>Hazelnut</li>
+                    <li>Macadamia</li>
+                    <li>Brazil Nut</li>
+                    <li>Chestnut</li>
+                    <li>Rice</li>
+                    <li>Wheat</li>
+                    <li>Barley</li>
+                    <li>Oats</li>
+                    <li>Corn</li>
+                    <li>Quinoa</li>
+                    <li>Amaranth</li>
+                    <li>Buckwheat</li>
+                    <li>Millet</li>
+                    <li>Sorghum</li>
+                    <li>Rye</li>
+                    <li>Spelt</li>
+                    <li>Farro</li>
+                    <li>Bulgar</li>
+                    <li>Couscous</li>
+                    <li>Polenta</li>
+                    <li>Tapioca</li>
+                    <li>Sago</li>
+                    <li>Arrowroot</li>
+                    <li>Cassava</li>
+                    <li>Yuca</li>
+                    <li>Taro</li>
+                    <li>Malanga</li>
+                    <li>Yam</li>
+                    <li>Sweet Potato</li>
+                    <li>Potato</li>
+                    <li>Beet</li>
+                    <li>Carrot</li>
+                    <li>Parsnip</li>
+                    <li>Turnip</li>
+                    <li>Radish</li>
+                    <li>Horseradish</li>
+                    <li>Wasabi</li>
+                    <li>Ginger</li>
+                    <li>Turmeric</li>
+                    <li>Galangal</li>
+                    <li>Lemongrass</li>
+                    <li>Cilantro</li>
+                    <li>Parsley</li>
+                    <li>Basil</li>
+                    <li>Oregano</li>
+                    <li>Thyme</li>
+                    <li>Rosemary</li>
+                    <li>Sage</li>
+                    <li>Mint</li>
+                    <li>Dill</li>
+                    <li>Tarragon</li>
+                    <li>Chives</li>
+                    <li>Bay Leaf</li>
+                    <li>Laurel</li>
+                    <li>Saffron</li>
+                    <li>Vanilla</li>
+                    <li>Cinnamon</li>
+                    <li>Nutmeg</li>
+                    <li>Clove</li>
+                    <li>Allspice</li>
+                    <li>Cardamom</li>
+                    <li>Coriander</li>
+                    <li>Cumin</li>
+                    <li>Fennel Seed</li>
+                    <li>Fenugreek</li>
+                    <li>Mustard Seed</li>
+                    <li>Paprika</li>
+                    <li>Cayenne</li>
+                    <li>Chili Powder</li>
+                    <li>Curry Powder</li>
+                    <li>Garlic Powder</li>
+                    <li>Onion Powder</li>
+                    <li>Black Pepper</li>
+                    <li>White Pepper</li>
+                    <li>Pink Peppercorn</li>
+                    <li>Sichuan Pepper</li>
+                    <li>Star Anise</li>
+                    <li>Juniper Berry</li>
+                    <li>Sumac</li>
+                    <li>Za'atar</li>
+                    <li>Dukkah</li>
+                    <li>Harissa</li>
+                    <li>Pesto</li>
+                    <li>Tapenade</li>
+                    <li>Chutney</li>
+                    <li>Relish</li>
+                    <li>Pickle</li>
+                    <li>Kimchi</li>
+                    <li>Sauerkraut</li>
+                    <li>Miso</li>
+                    <li>Soy Sauce</li>
+                    <li>Tamari</li>
+                    <li>Tempeh</li>
+                    <li>Tofu</li>
+                    <li>Seitan</li>
+                    <li>Edamame</li>
+                    <li>Natto</li>
+                    <li>Yogurt</li>
+                    <li>Cheese</li>
+                    <li>Butter</li>
+                    <li>Milk</li>
+                    <li>Cream</li>
+                    <li>Ice Cream</li>
+                    <li>Sorbet</li>
+                    <li>Gelato</li>
+                    <li>Frozen Yogurt</li>
+                    <li>Custard</li>
+                    <li>Pudding</li>
+                    <li>Mousse</li>
+                    <li>Whipped Cream</li>
+                    <li>Marshmallow</li>
+                    <li>Candy</li>
+                    <li>Chocolate</li>
+                    <li>Cake</li>
+                    <li>Cookie</li>
+                    <li>Bread</li>
+                    <li>Pasta</li>
+                    <li>Rice Noodle</li>
+                    <li>Udon</li>
+                    <li>Soba</li>
+                    <li>Ramen</li>
+                    <li>Spaghetti</li>
+                    <li>Macaroni</li>
+                    <li>Lasagna</li>
+                    <li>Ravioli</li>
+                    <li>Tortellini</li>
+                    <li>Gnocchi</li>
+                    <li>Pizza</li>
+                    <li>Calzone</li>
+                    <li>Focaccia</li>
+                    <li>Naan</li>
+                    <li>Pita</li>
+                    <li>Tortilla</li>
+                    <li>Wrap</li>
+                    <li>Burrito</li>
+                    <li>Taco</li>
+                    <li>Enchilada</li>
+                    <li>Quesadilla</li>
+                    <li>Fajita</li>
+                    <li>Chimichanga</li>
+                    <li>Salsa</li>
+                    <li>Guacamole</li>
+                    <li>Queso</li>
+                    <li>Nacho</li>
+                    <li>Chips</li>
+                    <li>Dip</li>
+                    <li>Soup</li>
+                    <li>Stew</li>
+                    <li>Chili</li>
+                    <li>Curry</li>
+                    <li>Stir Fry</li>
+                    <li>Fried Rice</li>
+                    <li>Paella</li>
+                    <li>Risotto</li>
+                    <li>Quiche</li>
+                    <li>Omelette</li>
+                    <li>Frittata</li>
+                    <li>Scrambled Egg</li>
+                    <li>Boiled Egg</li>
+                    <li>Fried Egg</li>
+                    <li>Poached Egg</li>
+                    <li>Baked Egg</li>
+                    <li>Deviled Egg</li>
+                    <li>Egg Salad</li>
+                    <li>Egg Drop Soup</li>
+                    <li>Egg Roll</li>
+                    <li>Egg Foo Young</li>
+                    <li>Meat</li>
+                    <li>Poultry</li>
+                    <li>Fish</li>
+                    <li>Shellfish</li>
+                    <li>Beef</li>
+                    <li>Pork</li>
+                    <li>Lamb</li>
+                    <li>Veal</li>
+                    <li>Chicken</li>
+                    <li>Turkey</li>
+                    <li>Duck</li>
+                    <li>Goose</li>
+                    <li>Quail</li>
+                    <li>Pheasant</li>
+                    <li>Salmon</li>
+                    <li>Tuna</li>
+                    <li>Cod</li>
+                    <li>Haddock</li>
+                    <li>Halibut</li>
+                    <li>Mahi Mahi</li>
+                    <li>Snapper</li>
+                    <li>Trout</li>
+                    <li>Bass</li>
+                    <li>Catfish</li>
+                    <li>Tilapia</li>
+                    <li>Shrimp</li>
+                    <li>Lobster</li>
+                    <li>Crab</li>
+                    <li>Clam</li>
+                    <li>Oyster</li>
+                    <li>Mussel</li>
+                    <li>Scallop</li>
+                    <li>Squid</li>
+                    <li>Octopus</li>
+                    <li>Cuttlefish</li>
+                    <li>Jellyfish</li>
+                    <li>Seaweed</li>
+                    <li>Nori</li>
+                    <li>Kombu</li>
+                    <li>Wakame</li>
+                    <li>Hijiki</li>
+                    <li>Arame</li>
+                    <li>Dulse</li>
+                    <li>Iceland Moss</li>
+                    <li>Irish Moss</li>
+                    <li>Spirulina</li>
+                    <li>Chlorella</li>
+                    <li>Agar</li>
+                    <li>Carrageenan</li>
+                    <li>Alginate</li>
+                    <li>Tea</li>
+                    <li>Coffee</li>
+                    <li>Herbal Tea</li>
+                    <li>Green Tea</li>
+                    <li>Black Tea</li>
+                    <li>White Tea</li>
+                    <li>Oolong Tea</li>
+                    <li>Pu-erh Tea</li>
+                    <li>Matcha</li>
+                    <li>Chai</li>
+                    <li>Yerba Mate</li>
+                    <li>Roiboos</li>
+                    <li>Hibiscus</li>
+                    <li>Chamomile</li>
+                    <li>Peppermint</li>
+                    <li>Spearmint</li>
+                    <li>Lemon Balm</li>
+                    <li>Lavender</li>
+                    <li>Rose Hip</li>
+                    <li>Elderberry</li>
+                    <li>Ginger Tea</li>
+                    <li>Lemon Tea</li>
+                    <li>Honey</li>
+                    <li>Maple Syrup</li>
+                    <li>Agave Nectar</li>
+                    <li>Stevia</li>
+                    <li>Sugar</li>
+                    <li>Brown Sugar</li>
+                    <li>Powdered Sugar</li>
+                    <li>Cane Sugar</li>
+                    <li>Beet Sugar</li>
+                    <li>Coconut Sugar</li>
+                    <li>Date Sugar</li>
+                    <li>Fruit Juice</li>
+                    <li>Vegetable Juice</li>
+                    <li>Smoothie</li>
+                    <li>Protein Shake</li>
+                    <li>Energy Drink</li>
+                    <li>Soda</li>
+                    <li>Water</li>
+                    <li>Sparkling Water</li>
+                    <li>Mineral Water</li>
+                    <li>Flavored Water</li>
+                    <li>Coconut Water</li>
+                    <li>Almond Milk</li>
+                    <li>Soy Milk</li>
+                    <li>Oat Milk</li>
+                    <li>Rice Milk</li>
+                    <li>Coconut Milk</li>
+                    <li>Cashew Milk</li>
+                    <li>Hemp Milk</li>
+                    <li>Flax Milk</li>
+                    <li>Quinoa Milk</li>
+                    <li>Amaranth Milk</li>
+                    <li>Buckwheat Milk</li>
+                    <li>Millet Milk</li>
+                    <li>Sorghum Milk</li>
+                    <li>Rye Milk</li>
+                    <li>Spelt Milk</li>
+                    <li>Farro Milk</li>
+                    <li>Bulgar Milk</li>
+                    <li>Couscous Milk</li>
+                    <li>Polenta Milk</li>
+                    <li>Tapioca Milk</li>
+                    <li>Sago Milk</li>
+                    <li>Arrowroot Milk</li>
+                    <li>Cassava Milk</li>
+                    <li>Yuca Milk</li>
+                    <li>Taro Milk</li>
+                    <li>Malanga Milk</li>
+                    <li>Yam Milk</li>
+                    <li>Sweet Potato Milk</li>
+                    <li>Potato Milk</li>
+                    <li>Beet Milk</li>
+                    <li>Carrot Milk</li>
+                    <li>Parsnip Milk</li>
+                    <li>Turnip Milk</li>
+                    <li>Radish Milk</li>
+                    <li>Horseradish Milk</li>
+                    <li>Wasabi Milk</li>
+                    <li>Ginger Milk</li>
+                    <li>Turmeric Milk</li>
+                    <li>Galangal Milk</li>
+                    <li>Lemongrass Milk</li>
+                    <li>Cilantro Milk</li>
+                    <li>Parsley Milk</li>
+                    <li>Basil Milk</li>
+                    <li>Oregano Milk</li>
+                    <li>Thyme Milk</li>
+                    <li>Rosemary Milk</li>
+                    <li>Sage Milk</li>
+                    <li>Mint Milk</li>
+                    <li>Dill Milk</li>
+                    <li>Tarragon Milk</li>
+                    <li>Chives Milk</li>
+                    <li>Bay Leaf Milk</li>
+                    <li>Laurel Milk</li>
+                    <li>Saffron Milk</li>
+                    <li>Vanilla Milk</li>
+                    <li>Cinnamon Milk</li>
+                    <li>Nutmeg Milk</li>
+                    <li>Clove Milk</li>
+                    <li>Allspice Milk</li>
+                    <li>Cardamom Milk</li>
+                    <li>Coriander Milk</li>
+                    <li>Cumin Milk</li>
+                    <li>Fennel Seed Milk</li>
+                    <li>Fenugreek Milk</li>
+                    <li>Mustard Seed Milk</li>
+                    <li>Paprika Milk</li>
+                    <li>Cayenne Milk</li>
+                    <li>Chili Powder Milk</li>
+                    <li>Curry Powder Milk</li>
+                    <li>Garlic Powder Milk</li>
+                    <li>Onion Powder Milk</li>
+                    <li>Black Pepper Milk</li>
+                    <li>White Pepper Milk</li>
+                    <li>Pink Peppercorn Milk</li>
+                    <li>Sichuan Pepper Milk</li>
+                    <li>Star Anise Milk</li>
+                    <li>Juniper Berry Milk</li>
+                    <li>Sumac Milk</li>
+                    <li>Za'atar Milk</li>
+                    <li>Dukkah Milk</li>
+                    <li>Harissa Milk</li>
+                    <li>Pesto Milk</li>
+                    <li>Tapenade Milk</li>
+                    <li>Chutney Milk</li>
+                    <li>Relish Milk</li>
+                    <li>Pickle Milk</li>
+                    <li>Kimchi Milk</li>
+                    <li>Sauerkraut Milk</li>
+                    <li>Miso Milk</li>
+                    <li>Soy Sauce Milk</li>
+                    <li>Tamari Milk</li>
+                    <li>Tempeh Milk</li>
+                    <li>Tofu Milk</li>
+                    <li>Seitan Milk</li>
+                    <li>Edamame Milk</li>
+                    <li>Natto Milk</li>
+                    <li>Yogurt Milk</li>
+                    <li>Cheese Milk</li>
+                    <li>Butter Milk</li>
+                    <li>Milk Milk</li>
+                    <li>Cream Milk</li>
+                    <li>Ice Cream Milk</li>
+                    <li>Sorbet Milk</li>
+                    <li>Gelato Milk</li>
+                    <li>Frozen Yogurt Milk</li>
+                    <li>Custard Milk</li>
+                    <li>Pudding Milk</li>
+                    <li>Mousse Milk</li>
+                    <li>Whipped Cream Milk</li>
+                    <li>Marshmallow Milk</li>
+                    <li>Candy Milk</li>
+                    <li>Chocolate Milk</li>
+                    <li>Cake Milk</li>
+                    <li>Cookie Milk</li>
+                    <li>Bread Milk</li>
+                    <li>Pasta Milk</li>
+                    <li>Rice Noodle Milk</li>
+                    <li>Udon Milk</li>
+                    <li>Soba Milk</li>
+                    <li>Ramen Milk</li>
+                    <li>Spaghetti Milk</li>
+                    <li>Macaroni Milk</li>
+                    <li>Lasagna Milk</li>
+                    <li>Ravioli Milk</li>
+                    <li>Tortellini Milk</li>
+                    <li>Gnocchi Milk</li>
+                    <li>Pizza Milk</li>
+                    <li>Calzone Milk</li>
+                    <li>Focaccia Milk</li>
+                    <li>Naan Milk</li>
+                    <li>Pita Milk</li>
+                    <li>Tortilla Milk</li>
+                    <li>Wrap Milk</li>
+                    <li>Burrito Milk</li>
+                    <li>Taco Milk</li>
+                    <li>Enchilada Milk</li>
+                    <li>Quesadilla Milk</li>
+                    <li>Fajita Milk</li>
+                    <li>Chimichanga Milk</li>
+                    <li>Salsa Milk</li>
+                    <li>Guacamole Milk</li>
+                    <li>Queso Milk</li>
+                    <li>Nacho Milk</li>
+                    <li>Chips Milk</li>
+                    <li>Dip Milk</li>
+                    <li>Soup Milk</li>
+                    <li>Stew Milk</li>
+                    <li>Chili Milk</li>
+                    <li>Curry Milk</li>
+                    <li>Stir Fry Milk</li>
+                    <li>Fried Rice Milk</li>
+                    <li>Paella Milk</li>
+                    <li>Risotto Milk</li>
+                    <li>Quiche Milk</li>
+                    <li>Omelette Milk</li>
+                    <li>Frittata Milk</li>
+                    <li>Scrambled Egg Milk</li>
+                    <li>Boiled Egg Milk</li>
+                    <li>Fried Egg Milk</li>
+                    <li>Poached Egg Milk</li>
+                    <li>Baked Egg Milk</li>
+                    <li>Deviled Egg Milk</li>
+                    <li>Egg Salad Milk</li>
+                    <li>Egg Drop Soup Milk</li>
+                    <li>Egg Roll Milk</li>
+                    <li>Egg Foo Young Milk</li>
+                    <li>Meat Milk</li>
+                    <li>Poultry Milk</li>
+                    <li>Fish Milk</li>
+                    <li>Shellfish Milk</li>
+                    <li>Beef Milk</li>
+                    <li>Pork Milk</li>
+                    <li>Lamb Milk</li>
+                    <li>Veal Milk</li>
+                    <li>Chicken Milk</li>
+                    <li>Turkey Milk</li>
+                    <li>Duck Milk</li>
+                    <li>Goose Milk</li>
+                    <li>Quail Milk</li>
+                    <li>Pheasant Milk</li>
+                    <li>Salmon Milk</li>
+                    <li>Tuna Milk</li>
+                    <li>Cod Milk</li>
+                    <li>Haddock Milk</li>
+                    <li>Halibut Milk</li>
+                    <li>Mahi Mahi Milk</li>
+                    <li>Snapper Milk</li>
+                    <li>Trout Milk</li>
+                    <li>Bass Milk</li>
+                    <li>Catfish Milk</li>
+                    <li>Tilapia Milk</li>
+                    <li>Shrimp Milk</li>
+                    <li>Lobster Milk</li>
+                    <li>Crab Milk</li>
+                    <li>Clam Milk</li>
+                    <li>Oyster Milk</li>
+                    <li>Mussel Milk</li>
+                    <li>Scallop Milk</li>
+                    <li>Squid Milk</li>
+                    <li>Octopus Milk</li>
+                    <li>Cuttlefish Milk</li>
+                    <li>Jellyfish Milk</li>
+                    <li>Seaweed Milk</li>
+                    <li>Nori Milk</li>
+                    <li>Kombu Milk</li>
+                    <li>Wakame Milk</li>
+                    <li>Hijiki Milk</li>
+                    <li>Arame Milk</li>
+                    <li>Dulse Milk</li>
+                    <li>Iceland Moss Milk</li>
+                    <li>Irish Moss Milk</li>
+                    <li>Spirulina Milk</li>
+                    <li>Chlorella Milk</li>
+                    <li>Agar Milk</li>
+                    <li>Carrageenan Milk</li>
+                    <li>Alginate Milk</li>
+                    <li>Tea Milk</li>
+                    <li>Coffee Milk</li>
+                    <li>Herbal Tea Milk</li>
+                    <li>Green Tea Milk</li>
+                    <li>Black Tea Milk</li>
+                    <li>White Tea Milk</li>
+                    <li>Oolong Tea Milk</li>
+                    <li>Pu-erh Tea Milk</li>
+                    <li>Matcha Milk</li>
+                    <li>Chai Milk</li>
+                    <li>Yerba Mate Milk</li>
+                    <li>Roiboos Milk</li>
+                    <li>Hibiscus Milk</li>
+                    <li>Chamomile Milk</li>
+                    <li>Peppermint Milk</li>
+                    <li>Spearmint Milk</li>
+                    <li>Lemon Balm Milk</li>
+                    <li>Lavender Milk</li>
+                    <li>Rose Hip Milk</li>
+                    <li>Elderberry Milk</li>
+                    <li>Ginger Tea Milk</li>
+                    <li>Lemon Tea Milk</li>
+                    <li>Honey Milk</li>
+                    <li>Maple Syrup Milk</li>
+                    <li>Agave Nectar Milk</li>
+                    <li>Stevia Milk</li>
+                    <li>Sugar Milk</li>
+                    <li>Brown Sugar Milk</li>
+                    <li>Powdered Sugar Milk</li>
+                    <li>Cane Sugar Milk</li>
+                    <li>Beet Sugar Milk</li>
+                    <li>Coconut Sugar Milk</li>
+                    <li>Date Sugar Milk</li>
+                    <li>Fruit Juice Milk</li>
+                    <li>Vegetable Juice Milk</li>
+                    <li>Smoothie Milk</li>
+                    <li>Protein Shake Milk</li>
+                    <li>Energy Drink Milk</li>
+                    <li>Soda Milk</li>
+                    <li>Water Milk</li>
+                    <li>Sparkling Water Milk</li>
+                    <li>Mineral Water Milk</li>
+                    <li>Flavored Water Milk</li>
+                    <li>Coconut Water Milk</li>
+                    <li>Almond Milk</li>
+                    <li>Soy Milk</li>
+                    <li>Oat Milk</li>
+                    <li>Rice Milk</li>
+                    <li>Coconut Milk</li>
+                    <li>Cashew Milk</li>
+                    <li>Hemp Milk</li>
+                    <li>Flax Milk</li>
+                    <li>Quinoa Milk</li>
+                    <li>Amaranth Milk</li>
+                    <li>Buckwheat Milk</li>
+                    <li>Millet Milk</li>
+                    <li>Sorghum Milk</li>
+                    <li>Rye Milk</li>
+                    <li>Spelt Milk</li>
+                    <li>Farro Milk</li>
+                    <li>Bulgar Milk</li>
+                    <li>Couscous Milk</li>
+                    <li>Polenta Milk</li>
+                    <li>Tapioca Milk</li>
+                    <li>Sago Milk</li>
+                    <li>Arrowroot Milk</li>
+                    <li>Cassava Milk</li>
+                    <li>Yuca Milk</li>
+                    <li>Taro Milk</li>
+                    <li>Malanga Milk</li>
+                    <li>Yam Milk</li>
+                    <li>Sweet Potato Milk</li>
+                    <li>Potato Milk</li>
+                    <li>Beet Milk</li>
+                    <li>Carrot Milk</li>
+                    <li>Parsnip Milk</li>
+                    <li>Turnip Milk</li>
+                    <li>Radish Milk</li>
+                    <li>Horseradish Milk</li>
+                    <li>Wasabi Milk</li>
+                    <li>Ginger Milk</li>
+                    <li>Turmeric Milk</li>
+                    <li>Galangal Milk</li>
+                    <li>Lemongrass Milk</li>
+                    <li>Cilantro Milk</li>
+                    <li>Parsley Milk</li>
+                    <li>Basil Milk</li>
+                    <li>Oregano Milk</li>
+                    <li>Thyme Milk</li>
+                    <li>Rosemary Milk</li>
+                    <li>Sage Milk</li>
+                    <li>Mint Milk</li>
+                    <li>Dill Milk</li>
+                    <li>Tarragon Milk</li>
+                    <li>Chives Milk</li>
+                    <li>Bay Leaf Milk</li>
+                    <li>Laurel Milk</li>
+                    <li>Saffron Milk</li>
+                    <li>Vanilla Milk</li>
+                    <li>Cinnamon Milk</li>
+                    <li>Nutmeg Milk</li>
+                    <li>Clove Milk</li>
+                    <li>Allspice Milk</li>
+                    <li>Cardamom Milk</li>
+                    <li>Coriander Milk</li>
+                    <li>Cumin Milk</li>
+                    <li>Fennel Seed Milk</li>
+                    <li>Fenugreek Milk</li>
+                    <li>Mustard Seed Milk</li>
+                    <li>Paprika Milk</li>
+                    <li>Cayenne Milk</li>
+                    <li>Chili Powder Milk</li>
+                    <li>Curry Powder Milk</li>
+                    <li>Garlic Powder Milk</li>
+                    <li>Onion Powder Milk</li>
+                    <li>Black Pepper Milk</li>
+                    <li>White Pepper Milk</li>
+                    <li>Pink Peppercorn Milk</li>
+                    <li>Sichuan Pepper Milk</li>
+                    <li>Star Anise Milk</li>
+                    <li>Juniper Berry Milk</li>
+                    <li>Sumac Milk</li>
+                    <li>Za'atar Milk</li>
+                    <li>Dukkah Milk</li>
+                    <li>Harissa Milk</li>
+                    <li>Pesto Milk</li>
+                    <li>Tapenade Milk</li>
+                    <li>Chutney Milk</li>
+                    <li>Relish Milk</li>
+                    <li>Pickle Milk</li>
+                    <li>Kimchi Milk</li>
+                    <li>Sauerkraut Milk</li>
+                    <li>Miso Milk</li>
+                    <li>Soy Sauce Milk</li>
+                    <li>Tamari Milk</li>
+                    <li>Tempeh Milk</li>
+                    <li>Tofu Milk</li>
+                    <li>Seitan Milk</li>
+                    <li>Edamame Milk</li>
+                    <li>Natto Milk</li>
+                    <li>Yogurt Milk</li>
+                    <li>Cheese Milk</li>
+                    <li>Butter Milk</li>
+                    <li>Milk Milk</li>
+                    <li>Cream Milk</li>
+                    <li>Ice Cream Milk</li>
+                    <li>Sorbet Milk</li>
+                    <li>Gelato Milk</li>
+                    <li>Frozen Yogurt Milk</li>
+                    <li>Custard Milk</li>
+                    <li>Pudding Milk</li>
+                    <li>Mousse Milk</li>
+                    <li>Whipped Cream Milk</li>
+                    <li>Marshmallow Milk</li>
+                    <li>Candy Milk</li>
+                    <li>Chocolate Milk</li>
+                    <li>Cake Milk</li>
+                    <li>Cookie Milk</li>
+                    <li>Bread Milk</li>
+                    <li>Pasta Milk</li>
+                    <li>Rice Noodle Milk</li>
+                    <li>Udon Milk</li>
+                    <li>Soba Milk</li>
+                    <li>Ramen Milk</li>
+                    <li>Spaghetti Milk</li>
+                    <li>Macaroni Milk</li>
+                    <li>Lasagna Milk</li>
+                    <li>Ravioli Milk</li>
+                    <li>Tortellini Milk</li>
+                    <li>Gnocchi Milk</li>
+                    <li>Pizza Milk</li>
+                    <li>Calzone Milk</li>
+                    <li>Focaccia Milk</li>
+                    <li>Naan Milk</li>
+                    <li>Pita Milk</li>
+                    <li>Tortilla Milk</li>
+                    <li>Wrap Milk</li>
+                    <li>Burrito Milk</li>
+                    <li>Taco Milk</li>
+                    <li>Enchilada Milk</li>
+                    <li>Quesadilla Milk</li>
+                    <li>Fajita Milk</li>
+                    <li>Chimichanga Milk</li>
+                    <li>Salsa Milk</li>
+                    <li>Guacamole Milk</li>
+                    <li>Queso Milk</li>
+                    <li>Nacho Milk</li>
+                    <li>Chips Milk</li>
+                    <li>Dip Milk</li>
+                    <li>Soup Milk</li>
+                    <li>Stew Milk</li>
+                    <li>Chili Milk</li>
+                    <li>Curry Milk</li>
+                    <li>Stir Fry Milk</li>
+                    <li>Fried Rice Milk</li>
+                    <li>Paella Milk</li>
+                    <li>Risotto Milk</li>
+                    <li>Quiche Milk</li>
+                    <li>Omelette Milk</li>
+                    <li>Frittata Milk</li>
+                    <li>Scrambled Egg Milk</li>
+                    <li>Boiled Egg Milk</li>
+                    <li>Fried Egg Milk</li>
+                    <li>Poached Egg Milk</li>
+                    <li>Baked Egg Milk</li>
+                    <li>Deviled Egg Milk</li>
+                    <li>Egg Salad Milk</li>
+                    <li>Egg Drop Soup Milk</li>
+                    <li>Egg Roll Milk</li>
+                    <li>Egg Foo Young Milk</li>
+                    <li>Meat Milk</li>
+                    <li>Poultry Milk</li>
+                    <li>Fish Milk</li>
+                    <li>Shellfish Milk</li>
+                    <li>Beef Milk</li>
+                    <li>Pork Milk</li>
+                    <li>Lamb Milk</li>
+                    <li>Veal Milk</li>
+                    <li>Chicken Milk</li>
+                    <li>Turkey Milk</li>
+                    <li>Duck Milk</li>
+                    <li>Goose Milk</li>
+                    <li>Quail Milk</li>
+                    <li>Pheasant Milk</li>
+                    <li>Salmon Milk</li>
+                    <li>Tuna Milk</li>
+                    <li>Cod Milk</li>
+                    <li>Haddock Milk</li>
+                    <li>Halibut Milk</li>
+                    <li>Mahi Mahi Milk</li>
+                    <li>Snapper Milk</li>
+                    <li>Trout Milk</li>
+                    <li>Bass Milk</li>
+                    <li>Catfish Milk</li>
+                    <li>Tilapia Milk</li>
+                    <li>Shrimp Milk</li>
+                    <li>Lobster Milk</li>
+                    <li>Crab Milk</li>
+                    <li>Clam Milk</li>
+                    <li>Oyster Milk</li>
+                    <li>Mussel Milk</li>
+                    <li>Scallop Milk</li>
+                    <li>Squid Milk</li>
+                    <li>Octopus Milk</li>
+                    <li>Cuttlefish Milk</li>
+                    <li>Jellyfish Milk</li>
+                    <li>Seaweed Milk</li>
+                    <li>Nori Milk</li>
+                    <li>Kombu Milk</li>
+                    <li>Wakame Milk</li>
+                    <li>Hijiki Milk</li>
+                    <li>Arame Milk</li>
+                    <li>Dulse Milk</li>
+                    <li>Iceland Moss Milk</li>
+                    <li>Irish Moss Milk</li>
+                    <li>Spirulina Milk</li>
+                    <li>Chlorella Milk</li>
+                    <li>Agar Milk</li>
+                    <li>Carrageenan Milk</li>
+                    <li>Alginate Milk</li>
+                    <li>Tea Milk</li>
+                    <li>Coffee Milk</li>
+                    <li>Herbal Tea Milk</li>
+                    <li>Green Tea Milk</li>
+                    <li>Black Tea Milk</li>
+                    <li>White Tea Milk</li>
+                    <li>Oolong Tea Milk</li>
+                    <li>Pu-erh Tea Milk</li>
+                    <li>Matcha Milk</li>
+                    <li>Chai Milk</li>
+                    <li>Yerba Mate Milk</li>
+                    <li>Roiboos Milk</li>
+                    <li>Hibiscus Milk</li>
+                    <li>Chamomile Milk</li>
+                    <li>Peppermint Milk</li>
+                    <li>Spearmint Milk</li>
+                    <li>Lemon Balm Milk</li>
+                    <li>Lavender Milk</li>
+                    <li>Rose Hip Milk</li>
+                    <li>Elderberry Milk</li>
+                    <li>Ginger Tea Milk</li>
+                    <li>Lemon Tea Milk</li>
+                    <li>Honey Milk</li>
+                    <li>Maple Syrup Milk</li>
+                    <li>Agave Nectar Milk</li>
+                    <li>Stevia Milk</li>
+                    <li>Sugar Milk</li>
+                    <li>Brown Sugar Milk</li>
+                    <li>Powdered Sugar Milk</li>
+                    <li>Cane Sugar Milk</li>
+                    <li>Beet Sugar Milk</li>
+                    <li>Coconut Sugar Milk</li>
+                    <li>Date Sugar Milk</li>
+                    <li>Fruit Juice Milk</li>
+                    <li>Vegetable Juice Milk</li>
+                    <li>Smoothie Milk</li>
+                    <li>Protein Shake Milk</li>
+                    <li>Energy Drink Milk</li>
+                    <li>Soda Milk</li>
+                    <li>Water Milk</li>
+                    <li>Sparkling Water Milk</li>
+                    <li>Mineral Water Milk</li>
+                    <li>Flavored Water Milk</li>
+                    <li>Coconut Water Milk</li>
+                </ul>
+                <h4>Vegetables</h4>
+                <ul>
+                    <li>Carrot</li>
+                    <li>Broccoli</li>
+                    <li>Spinach</li>
+                    <li>Kale</li>
+                    <li>Lettuce</li>
+                    <li>Cucumber</li>
+                    <li>Tomato</li>
+                    <li>Pepper</li>
+                    <li>Onion</li>
+                    <li>Garlic</li>
+                    <li>Potato</li>
+                    <li>Sweet Potato</li>
+                    <li>Beet</li>
+                    <li>Radish</li>
+                    <li>Turnip</li>
+                    <li>Parsnip</li>
+                    <li>Celery</li>
+                    <li>Asparagus</li>
+                    <li>Green Bean</li>
+                    <li>Pea</li>
+                    <li>Corn</li>
+                    <li>Zucchini</li>
+                    <li>Eggplant</li>
+                    <li>Squash</li>
+                    <li>Pumpkin</li>
+                    <li>Cabbage</li>
+                    <li>Cauliflower</li>
+                    <li>Brussels Sprouts</li>
+                    <li>Artichoke</li>
+                    <li>Fennel</li>
+                    <li>Leek</li>
+                    <li>Shallot</li>
+                    <li>Scallion</li>
+                    <li>Chives</li>
+                    <li>Mushroom</li>
+                    <li>Shiitake</li>
+                    <li>Portobello</li>
+                    <li>Button Mushroom</li>
+                    <li>Oyster Mushroom</li>
+                    <li>Enoki</li>
+                    <li>Morel</li>
+                    <li>Truffle</li>
+                    <li>Chanterelle</li>
+                    <li>Porcini</li>
+                    <li>Cremini</li>
+                    <li>White Mushroom</li>
+                    <li>Brown Mushroom</li>
+                    <li>King Oyster</li>
+                    <li>Lion's Mane</li>
+                    <li>Reishi</li>
+                    <li>Turkey Tail</li>
+                    <li>Chaga</li>
+                    <li>Maitake</li>
+                    <li>Shiitake</li>
+                    <li>Portobello</li>
+                    <li>Button Mushroom</li>
+                    <li>Oyster Mushroom</li>
+                    <li>Enoki</li>
+                    <li>Morel</li>
+                    <li>Truffle</li>
+                    <li>Chanterelle</li>
+                    <li>Porcini</li>
+                    <li>Cremini</li>
+                    <li>White Mushroom</li>
+                    <li>Brown Mushroom</li>
+                    <li>King Oyster</li>
+                    <li>Lion's Mane</li>
+                    <li>Reishi</li>
+                    <li>Turkey Tail</li>
+                    <li>Chaga</li>
+                    <li>Maitake</li>
+                </ul>
+                <h4>Others</h4>
+                <ul>
+                    <li>Rice</li>
+                    <li>Wheat</li>
+                    <li>Barley</li>
+                    <li>Oats</li>
+                    <li>Corn</li>
+                    <li>Quinoa</li>
+                    <li>Amaranth</li>
+                    <li>Buckwheat</li>
+                    <li>Millet</li>
+                    <li>Sorghum</li>
+                    <li>Rye</li>
+                    <li>Spelt</li>
+                    <li>Farro</li>
+                    <li>Bulgar</li>
+                    <li>Couscous</li>
+                    <li>Polenta</li>
+                    <li>Tapioca</li>
+                    <li>Sago</li>
+                    <li>Arrowroot</li>
+                    <li>Cassava</li>
+                    <li>Yuca</li>
+                    <li>Taro</li>
+                    <li>Malanga</li>
+                    <li>Yam</li>
+                    <li>Sweet Potato</li>
+                    <li>Potato</li>
+                    <li>Beet</li>
+                    <li>Carrot</li>
+                    <li>Parsnip</li>
+                    <li>Turnip</li>
+                    <li>Radish</li>
+                    <li>Horseradish</li>
+                    <li>Wasabi</li>
+                    <li>Ginger</li>
+                    <li>Turmeric</li>
+                    <li>Galangal</li>
+                    <li>Lemongrass</li>
+                    <li>Cilantro</li>
+                    <li>Parsley</li>
+                    <li>Basil</li>
+                    <li>Oregano</li>
+                    <li>Thyme</li>
+                    <li>Rosemary</li>
+                    <li>Sage</li>
+                    <li>Mint</li>
+                    <li>Dill</li>
+                    <li>Tarragon</li>
+                    <li>Chives</li>
+                    <li>Bay Leaf</li>
+                    <li>Laurel</li>
+                    <li>Saffron</li>
+                    <li>Vanilla</li>
+                    <li>Cinnamon</li>
+                    <li>Nutmeg</li>
+                    <li>Clove</li>
+                    <li>Allspice</li>
+                    <li>Cardamom</li>
+                    <li>Coriander</li>
+                    <li>Cumin</li>
+                    <li>Fennel Seed</li>
+                    <li>Fenugreek</li>
+                    <li>Mustard Seed</li>
+                    <li>Paprika</li>
+                    <li>Cayenne</li>
+                    <li>Chili Powder</li>
+                    <li>Curry Powder</li>
+                    <li>Garlic Powder</li>
+                    <li>Onion Powder</li>
+                    <li>Black Pepper</li>
+                    <li>White Pepper</li>
+                    <li>Pink Peppercorn</li>
+                    <li>Sichuan Pepper</li>
+                    <li>Star Anise</li>
+                    <li>Juniper Berry</li>
+                    <li>Sumac</li>
+                    <li>Za'atar</li>
+                    <li>Dukkah</li>
+                    <li>Harissa</li>
+                    <li>Pesto</li>
+                    <li>Tapenade</li>
+                    <li>Chutney</li>
+                    <li>Relish</li>
+                    <li>Pickle</li>
+                    <li>Kimchi</li>
+                    <li>Sauerkraut</li>
+                    <li>Miso</li>
+                    <li>Soy Sauce</li>
+                    <li>Tamari</li>
+                    <li>Tempeh</li>
+                    <li>Tofu</li>
+                    <li>Seitan</li>
+                    <li>Edamame</li>
+                    <li>Natto</li>
+                    <li>Yogurt</li>
+                    <li>Cheese</li>
+                    <li>Butter</li>
+                    <li>Milk</li>
+                    <li>Cream</li>
+                    <li>Ice Cream</li>
+                    <li>Sorbet</li>
+                    <li>Gelato</li>
+                    <li>Frozen Yogurt</li>
+                    <li>Custard</li>
+                    <li>Pudding</li>
+                    <li>Mousse</li>
+                    <li>Whipped Cream</li>
+                    <li>Marshmallow</li>
+                    <li>Candy</li>
+                    <li>Chocolate</li>
+                    <li>Cake</li>
+                    <li>Cookie</li>
+                    <li>Bread</li>
+                    <li>Pasta</li>
+                    <li>Rice Noodle</li>
+                    <li>Udon</li>
+                    <li>Soba</li>
+                    <li>Ramen</li>
+                    <li>Spaghetti</li>
+                    <li>Macaroni</li>
+                    <li>Lasagna</li>
+                    <li>Ravioli</li>
+                    <li>Tortellini</li>
+                    <li>Gnocchi</li>
+                    <li>Pizza</li>
+                    <li>Calzone</li>
+                    <li>Focaccia</li>
+                    <li>Naan</li>
+                    <li>Pita</li>
+                    <li>Tortilla</li>
+                    <li>Wrap</li>
+                    <li>Burrito</li>
+                    <li>Taco</li>
+                    <li>Enchilada</li>
+                    <li>Quesadilla</li>
+                    <li>Fajita</li>
+                    <li>Chimichanga</li>
+                    <li>Salsa</li>
+                    <li>Guacamole</li>
+                    <li>Queso</li>
+                    <li>Nacho</li>
+                    <li>Chips</li>
+                    <li>Dip</li>
+                    <li>Soup</li>
+                    <li>Stew</li>
+                    <li>Chili</li>
+                    <li>Curry</li>
+                    <li>Stir Fry</li>
+                    <li>Fried Rice</li>
+                    <li>Paella</li>
+                    <li>Risotto</li>
+                    <li>Quiche</li>
+                    <li>Omelette</li>
+                    <li>Frittata</li>
+                    <li>Scrambled Egg</li>
+                    <li>Boiled Egg</li>
+                    <li>Fried Egg</li>
+                    <li>Poached Egg</li>
+                    <li>Baked Egg</li>
+                    <li>Deviled Egg</li>
+                    <li>Egg Salad</li>
+                    <li>Egg Drop Soup</li>
+                    <li>Egg Roll</li>
+                    <li>Egg Foo Young</li>
+                    <li>Meat</li>
+                    <li>Poultry</li>
+                    <li>Fish</li>
+                    <li>Shellfish</li>
+                    <li>Beef</li>
+                    <li>Pork</li>
+                    <li>Lamb</li>
+                    <li>Veal</li>
+                    <li>Chicken</li>
+                    <li>Turkey</li>
+                    <li>Duck</li>
+                    <li>Goose</li>
+                    <li>Quail</li>
+                    <li>Pheasant</li>
+                    <li>Salmon</li>
+                    <li>Tuna</li>
+                    <li>Cod</li>
+                    <li>Haddock</li>
+                    <li>Halibut</li>
+                    <li>Mahi Mahi</li>
+                    <li>Snapper</li>
+                    <li>Trout</li>
+                    <li>Bass</li>
+                    <li>Catfish</li>
+                    <li>Tilapia</li>
+                    <li>Shrimp</li>
+                    <li>Lobster</li>
+                    <li>Crab</li>
+                    <li>Clam</li>
+                    <li>Oyster</li>
+                    <li>Mussel</li>
+                    <li>Scallop</li>
+                    <li>Squid</li>
+                    <li>Octopus</li>
+                    <li>Cuttlefish</li>
+                    <li>Jellyfish</li>
+                    <li>Seaweed</li>
+                    <li>Nori</li>
+                    <li>Kombu</li>
+                    <li>Wakame</li>
+                    <li>Hijiki</li>
+                    <li>Arame</li>
+                    <li>Dulse</li>
+                    <li>Iceland Moss</li>
+                    <li>Irish Moss</li>
+                    <li>Spirulina</li>
+                    <li>Chlorella</li>
+                    <li>Agar</li>
+                    <li>Carrageenan</li>
+                    <li>Alginate</li>
+                    <li>Tea</li>
+                    <li>Coffee</li>
+                    <li>Herbal Tea</li>
+                    <li>Green Tea</li>
+                    <li>Black Tea</li>
+                    <li>White Tea</li>
+                    <li>Oolong Tea</li>
+                    <li>Pu-erh Tea</li>
+                    <li>Matcha</li>
+                    <li>Chai</li>
+                    <li>Yerba Mate</li>
+                    <li>Roiboos</li>
+                    <li>Hibiscus</li>
+                    <li>Chamomile</li>
+                    <li>Peppermint</li>
+                    <li>Spearmint</li>
+                    <li>Lemon Balm</li>
+                    <li>Lavender</li>
+                    <li>Rose Hip</li>
+                    <li>Elderberry</li>
+                    <li>Ginger Tea</li>
+                    <li>Lemon Tea</li>
+                    <li>Honey</li>
+                    <li>Maple Syrup</li>
+                    <li>Agave Nectar</li>
+                    <li>Stevia</li>
+                    <li>Sugar</li>
+                    <li>Brown Sugar</li>
+                    <li>Powdered Sugar</li>
+                    <li>Cane Sugar</li>
+                    <li>Beet Sugar</li>
+                    <li>Coconut Sugar</li>
+                    <li>Date Sugar</li>
+                    <li>Fruit Juice</li>
+                    <li>Vegetable Juice</li>
+                    <li>Smoothie</li>
+                    <li>Protein Shake</li>
+                    <li>Energy Drink</li>
+                    <li>Soda</li>
+                    <li>Water</li>
+                    <li>Sparkling Water</li>
+                    <li>Mineral Water</li>
+                    <li>Flavored Water</li>
+                    <li>Coconut Water</li>
+                </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 SugbUma. All rights reserved.</p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/community.js"></script>
+</body>
+</html>

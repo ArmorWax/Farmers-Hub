@@ -1,0 +1,13 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="fieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#eef8f5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fdfefe;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="200" fill="url(#fieldGrad)"/>
+  <circle cx="50" cy="150" r="20" fill="#16a085" opacity="0.2"/>
+  <circle cx="150" cy="120" r="15" fill="#125a53" opacity="0.2"/>
+  <circle cx="250" cy="140" r="18" fill="#16a085" opacity="0.2"/>
+  <circle cx="350" cy="130" r="12" fill="#125a53" opacity="0.2"/>
+</svg>

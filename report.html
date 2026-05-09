@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/png" href="images/sugbuma-logo.svg">
+    <title>Reports - SugbUma</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1><img src="images/sugbuma-logo.svg" alt="SugbUma Logo" style="width: 40px; height: 40px; margin-right: 0.5rem;"> SugbUma <span class="tagline">Smart Farming Hub</span></h1>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="feed.html"><i class="fas fa-rss"></i> Feed</a>
+            <a href="market.html"><i class="fas fa-chart-line"></i> Market</a>
+            <a href="report.html"><i class="fas fa-exclamation-triangle"></i> Reports</a>
+            <a href="community.html"><i class="fas fa-users"></i> Community</a>
+            <a href="travel.html"><i class="fas fa-map"></i> Travel</a>
+            <a href="produce.html"><i class="fas fa-leaf"></i> Products</a>
+            <a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Reports & Alerts</h2>
+                <p>Flag overpricing, view suspicious listings, and keep market trading transparent.</p>
+            </div>
+            <img class="hero-image" src="images/farm-illustration.svg" alt="Report illustration">
+        </section>
+        <section class="card">
+            <h3>Report Overpricing</h3>
+            <form id="reportForm">
+                <div>
+                    <label for="vendor">Vendor name</label>
+                    <input type="text" id="vendor" placeholder="Vendor name" required>
+                </div>
+                <div>
+                    <label for="productReported">Product</label>
+                    <input type="text" id="productReported" placeholder="Product sold" required>
+                </div>
+                <div>
+                    <label for="reportedPrice">Reported price</label>
+                    <input type="number" id="reportedPrice" placeholder="Price" required>
+                </div>
+                <button class="btn btn-primary" type="submit"><i class="fas fa-flag"></i> Submit Report</button>
+            </form>
+            <p id="reportMessage" class="note"></p>
+        </section>
+        <section class="card">
+            <h3>Overpricing Alerts</h3>
+            <ul id="reportList"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 SugbUma. All rights reserved.</p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/report.js"></script>
+</body>
+</html>

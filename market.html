@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Tools - SugbUma</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="icon" type="image/png" href="images/sugbuma-logo.svg">
+</head>
+<body>
+    <header>
+        <h1><img src="images/sugbuma-logo.svg" alt="SugbUma Logo" style="width: 40px; height: 40px; margin-right: 0.5rem;"> SugbUma <span class="tagline">Smart Farming Hub</span></h1>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="feed.html"><i class="fas fa-rss"></i> Feed</a>
+            <a href="market.html"><i class="fas fa-chart-line"></i> Market</a>
+            <a href="report.html"><i class="fas fa-exclamation-triangle"></i> Reports</a>
+            <a href="community.html"><i class="fas fa-users"></i> Community</a>
+            <a href="travel.html"><i class="fas fa-map"></i> Travel</a>
+            <a href="produce.html"><i class="fas fa-leaf"></i> Products</a>
+          <a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Market Tools</h2>
+                <p>Compare prices, predict trends, and track product history in a dedicated market toolkit.</p>
+            </div>
+            <img class="hero-image" src="images/farm-illustration.svg" alt="Market tools illustration">
+        </section>
+        <section class="card">
+            <h3>Scan & Check</h3>
+            <div class="dashboard-grid">
+                <div class="panel">
+                    <label for="productQuery">Product name</label>
+                    <input type="text" id="productQuery" placeholder="rice, corn, banana">
+                    <button id="searchBtn" class="btn btn-primary" type="button"><i class="fas fa-search"></i> Search Average Price</button>
+                    <p id="averagePrice"></p>
+                </div>
+                <div class="panel">
+                    <h4>Market Comparison</h4>
+                    <select id="market1">
+                        <option value="">Select market 1</option>
+                    </select>
+                    <select id="market2">
+                        <option value="">Select market 2</option>
+                    </select>
+                    <button id="compareBtn" class="btn btn-secondary" type="button"><i class="fas fa-balance-scale"></i> Compare</button>
+                    <p id="comparisonResult"></p>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <h3>Price History & Prediction</h3>
+            <div class="dashboard-grid">
+                <div class="panel">
+                    <label for="historyProduct">Price history for</label>
+                    <input type="text" id="historyProduct" placeholder="rice, corn, banana">
+                    <button id="historyBtn" class="btn btn-secondary" type="button"><i class="fas fa-chart-bar"></i> Show History</button>
+                    <canvas id="historyChart" width="400" height="200"></canvas>
+                </div>
+                <div class="panel">
+                    <label for="predictProduct">Predict price for</label>
+                    <input type="text" id="predictProduct" placeholder="rice, corn, banana">
+                    <button id="predictBtn" class="btn btn-secondary" type="button">Predict Price</button>
+                    <p id="prediction"></p>
+                    <canvas id="predictChart" width="400" height="200"></canvas>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 SugbUma. All rights reserved.</p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/market.js"></script>
+</body>
+</html>

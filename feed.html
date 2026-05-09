@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed - SugbUma</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+      <link rel="icon" type="image/png" href="images/sugbuma-logo.svg">
+</head>
+<body>
+    <header>
+        <h1><img src="images/sugbuma-logo.svg" alt="SugbUma Logo" style="width: 40px; height: 40px; margin-right: 0.5rem;"> SugbUma <span class="tagline">Smart Farming Hub</span></h1>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="feed.html"><i class="fas fa-rss"></i> Feed</a>
+            <a href="market.html"><i class="fas fa-chart-line"></i> Market</a>
+            <a href="report.html"><i class="fas fa-exclamation-triangle"></i> Reports</a>
+            <a href="community.html"><i class="fas fa-users"></i> Community</a>
+            <a href="travel.html"><i class="fas fa-map"></i> Travel</a>
+            <a href="produce.html"><i class="fas fa-leaf"></i> Products</a>
+            <a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Farm News Feed</h2>
+                <p>Share farm ideas, read community updates, and post images with captions in a dedicated news feed.</p>
+            </div>
+            <img class="hero-image" src="images/farm-illustration.svg" alt="Farm community illustration">
+        </section>
+        <section class="card">
+            <div class="section-head">
+                <h3>Post to the feed</h3>
+                <span class="status-chip">News-style posting</span>
+            </div>
+            <form id="ideaForm">
+                <div>
+                    <label for="ideaText">Post text</label>
+                    <textarea id="ideaText" placeholder="Share your idea, harvest news, or market tip" required></textarea>
+                </div>
+                <div>
+                    <label for="ideaCaption">Caption</label>
+                    <input type="text" id="ideaCaption" placeholder="Add a short caption (optional)">
+                </div>
+                <div>
+                    <label for="ideaImage" class="btn btn-secondary"><i class="fas fa-camera"></i> Select Image</label>
+                    <input type="file" id="ideaImage" accept="image/*" style="display: none;">
+                </div>
+                <div id="imagePreview" class="image-preview"></div>
+                <button class="btn btn-primary" type="submit"><i class="fas fa-paper-plane"></i> Post to Feed</button>
+            </form>
+        </section>
+        <section class="card">
+            <div class="section-head">
+                <h3>Latest posts</h3>
+                <span class="status-chip">Community news</span>
+            </div>
+            <ul id="ideasList"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 SugbUma. All rights reserved.</p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/feed.js"></script>
+</body>
+</html>
